@@ -50,5 +50,6 @@ int main(int argc, char * argv[]) {
         
         cout << string (msg,n);
     }
-    return 0;
+    close(sock_client);
+    return EXIT_SUCCESS;
 }
