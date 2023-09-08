@@ -31,4 +31,4 @@
 
 #### Avantages des méthodes agiles
 
-<u>test</u>
+<u style="color: red">test</u>
