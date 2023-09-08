@@ -1,5 +1,5 @@
 <?php
-function start_page($title, $stylesheet): void
+function start_page($title, $stylesheet='styles'): void
 {
 ?><!DOCTYPE html>
 <html lang="fr">

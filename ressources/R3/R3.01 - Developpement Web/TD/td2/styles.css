@@ -1,6 +1,7 @@
 * {
-    background-color: #181819;
+    background-color: #222223;
     color: #bbb;
+    font-size: 1.3rem;
 }
 
 button {
@@ -9,17 +10,44 @@ button {
     border-radius: 1rem;
     width: 5rem;
     height: 3.5rem;
-    font-size: 1.5rem;
+}
+
+button:hover {
+    background-color: #333;
+    transition: ease-in-out;
+    transition-duration: 200ms;
+    transform: scale(110%);
+}
+
+#email {
+    width: 20rem;
+}
+
+.formulaire {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.gender {
+    margin-left: 2rem;
+}
+
+label {
+    margin: .5rem 0 .5rem 0;
 }
 
 input {
+    margin: 0 0 1rem 0;
+}
+
+input[type="text"], input[type="password"] {
     border: 2px solid #bbb;
     border-radius: 1rem;
     width: 8rem;
-    padding: 1rem;
-    font-size: 1.5rem;
+    padding: 0.4rem;
 }
 
-.text {
-    font-size: 2rem;
+input[type="radio"] {
+
 }
