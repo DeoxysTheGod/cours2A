@@ -26,8 +26,27 @@
   * Validations
   * Durée
   * Description fonctionnalité
-  * Exemples d'utilisation
+  * Exemples d'utilisationagiles
   * Critère d'acceptation
 
 #### Avantages des méthodes agiles
+
+* Valeurs de l'approche agile :
+  * Une équipe soudée
+  * Communication essentielle
+
+
+* Acteurs - Product Owner
+* 
+  * Responsable d'un produit
+  * **Interlocuteur** de l'équipe
+    * décrit et défini
+  * **Décisionnaire**
+
+* Acteurs - Scrum Master
+  * Aide l'équipe
+
+* Acteurs - Équipe de Développement
+  * **Réalise** le produit
+  * **Auto-organisé**
 
