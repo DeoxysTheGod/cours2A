@@ -1,0 +1,73 @@
+--------------------------------
+-- QUESTION 1
+--------------------------------
+
+CREATE OR REPLACE FUNCTION calculAge(DATENAIS DATE)
+RETURN NUMBER IS
+
+AGE NUMBER(3,0);
+NB_MOIS CONSTANT NUMBER(2,0) := 12;
+
+BEGIN
+AGE := FLOOR(MONTHS_BETWEEN(SYSDATE, DATENAIS)/NB_MOIS);
+RETURN (AGE);
+END;
+
+SELECT calculAge(DATE '2004-04-21')
+FROM DUAL;
+
+--------------------------------
+-- QUESTION 2
+--------------------------------
+
+CREATE OR REPLACE FUNCTION isMat(myModule MODULE.CODE%TYPE)
+RETURN NUMBER IS
+
+mat MODULE.CODE%TYPE;
+
+BEGIN
+    SELECT count(CODE) INTO mat FROM MATIERE
+    WHERE CODE = myModule;
+    RETURN mat;
+END;
+
+SELECT isMat('D') FROM DUAL;
+
+--------------------------------
+-- QUESTION 3
+--------------------------------
+
+CREATE OR REPLACE FUNCTION studentCity(num ETUDIANT.NUM_ET%TYPE)
+RETURN ETUDIANT.VILLE_ET%TYPE IS
+
+noCity EXCEPTION;
+
+city ETUDIANT.VILLE_ET%TYPE;
+
+BEGIN
+    SELECT VILLE_ET INTO city FROM ETUDIANT
+    WHERE NUM_ET = num;
+    IF city IS NULL THEN RAISE noCity; END IF;
+    RETURN (city);
+    
+EXCEPTION
+    WHEN noCity THEN RETURN 'CITY DOESN''T EXIST';
+    WHEN NO_DATA_FOUND THEN RETURN 'ETU DOESN''T EXIST';
+END;
+
+SELECT studentCity(3800) FROM DUAL;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
