@@ -9,10 +9,10 @@
     <label>Civilité (sexe) :
         <br>
         <label class="gender">Homme :
-            <input name="men" type="radio"/></label>
+            <input name="gender" value="Homme" type="radio"/></label>
         <br>
         <label class="gender">Femme :
-            <input name="women" type="radio"/></label>
+            <input name="gender" value="Femme" type="radio"/></label>
     </label>
     <label>E-mail :
         <input id="email" name="email" type="text"/>
@@ -24,7 +24,7 @@
         <input name="mdp_verif" type="password"/>
     </label>
     <label>Pays :
-        <select name="country">
+        <select name="pays">
             <option value="France">France</option>
             <option value="Italie">Italie</option>
             <option value="Angleterre">Angleterre</option>
@@ -37,6 +37,7 @@
         <input name="cg" type="checkbox"/>
     </label>
     <button name="action" value="mailer" type="submit">Submit</button>
+    <button name="action" value="send" type="submit">Send</button>
 </form>
 <?php require 'data-processing.php'; ?>
 
