@@ -1,4 +1,4 @@
-# R3.10 -   - amphi 1
+# R3.10 - Managements - amphi 1
 
 ## 1. Spécification des tâches
 
