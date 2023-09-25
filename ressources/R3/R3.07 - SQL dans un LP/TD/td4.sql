@@ -1,0 +1,111 @@
+----------------------
+-- QUESTION 1
+----------------------
+
+
+CREATE OR REPLACE TRIGGER dontRemoveThisMyDude
+BEFORE DELETE ON module
+FOR EACH ROW
+DECLARE
+    vcode MODULE.CODE%TYPE;
+    dontDelete EXCEPTION;
+BEGIN
+    SELECT DISTINCT CODE INTO vcode
+    FROM ENSEIGNT WHERE CODE = :OLD.CODE;
+    
+    IF vcode IS NOT NULL THEN RAISE dontDelete; END IF;
+
+EXCEPTION
+    WHEN NO_DATA_FOUND THEN NULL;
+    WHEN dontDelete THEN
+        RAISE_APPLICATION_ERROR
+        (-20001, 'You can''t delete this my bruda');
+END;
+
+DELETE FROM MODULE WHERE CODE = 'C++'
+
+-----------------------
+-- QUESTION 2
+-----------------------
+
+CREATE OR REPLACE TRIGGER dontInsertThisMyDude
+BEFORE INSERT ON ENSEIGNT
+FOR EACH ROW
+DECLARE
+    vcode MODULE.CODE%TYPE;
+BEGIN
+    SELECT CODE INTO vcode
+    FROM MODULE WHERE CODE = :OLD.CODE;
+    
+
+EXCEPTION
+    WHEN NO_DATA_FOUND THEN
+        RAISE_APPLICATION_ERROR
+        (-20002, 'You can''t insert this my bruda');
+END;
+
+INSERT INTO ENSEIGNT VALUES ('LIGMNUT', 1, 2101)
+
+--------------------------
+-- QUESTION 3
+--------------------------
+
+CREATE OR REPLACE TRIGGER auto0
+BEFORE INSERT OR UPDATE OF MOY_CC, MOY_TEST ON NOTATION
+FOR EACH ROW
+
+BEGIN
+    IF :NEW.MOY_CC IS NULL 
+    THEN :NEW.MOY_CC := 0; END IF;
+    IF :NEW.MOY_TEST IS NULL
+    THEN :NEW.MOY_TEST := 0; END IF;
+END;
+
+INSERT INTO NOTATION VALUES (2406, 'ANGL2', NULL, NULL)
+
+--------------------------
+-- QUESTION 4
+--------------------------
+
+CREATE OR REPLACE TRIGGER notMyMat
+BEFORE INSERT OR UPDATE ON NOTATION
+FOR EACH ROW
+DECLARE
+    doTheMat NUMBER(2,0);
+BEGIN
+    SELECT COUNT(*) INTO doTheMat
+    FROM ENSEIGNT WHERE :NEW.CODE = CODE AND :NEW.NUM_ET = NUM_ET;
+    IF doTheMat <= 0
+    THEN RAISE_APPLICATION_ERROR(-20001, 'Don''t do the mat');END IF;
+END;
+
+INSERT INTO NOTATION VALUES (1101, 'ACSI', 2, 15);
+
+--------------------------
+-- QUESTION 5
+--------------------------
+
+CREATE OR REPLACE TRIGGER isTheCoefSumIsTheRightWeWant
+BEFORE INSERT OR UPDATE ON MODULE
+FOR EACH ROW
+BEGIN
+    IF :NEW.COEFF_CC + :NEW.COEFF_TEST <> 100
+    THEN RAISE_APPLICATION_ERROR(-20001, 'It''s NOT what we want my dude');END IF;
+END;
+
+INSERT INTO MODULE (CODE, LIBELLE, COEFF_CC, COEFF_TEST) VALUES ('LIGMNUT', 'LIGMA NUT', 40, 50);
+
+--------------------------
+-- QUESTION 6
+--------------------------
+
+CREATE OR REPLACE TRIGGER howManyDudeThereIs
+AFTER INSERT OR UPDATE ON PROF
+DECLARE
+    howManyDude NUMBER(3,0);
+BEGIN
+    SELECT COUNT(*) INTO howManyDude FROM PROF;
+    DBMS_OUTPUT.PUT_LINE('Nb of dude : ' || howManyDude);
+END;
+
+INSERT INTO PROF(NUM_PROF, NOM_PROF, PRENOM_PROF, MAT_SPEC) VALUES (18,'LIGMA', 'NUT', 'MATH1');
