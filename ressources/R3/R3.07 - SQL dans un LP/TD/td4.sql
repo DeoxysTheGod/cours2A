@@ -109,3 +109,7 @@ BEGIN
 END;
 
 INSERT INTO PROF(NUM_PROF, NOM_PROF, PRENOM_PROF, MAT_SPEC) VALUES (18,'LIGMA', 'NUT', 'MATH1');
+
+---------------------------
+-- QUESTION 7
+---------------------------
