@@ -28,8 +28,7 @@ des dommages et intérêt et même demandé en justice la nullité du contrat ou
 ### b. Les avant-contrats
 #### Pacte de préférence
 C'est l'**engagement** pris par une personne qu'on appelle l'**offrant potentiel** de proposer prioritairement à une autre personne (le bénéficiaire) 
-de 
-traiter avec elle pour le cas où elle déciderait de passer le contrat envisager.
+de traiter avec elle pour le cas où elle déciderait de passer le contrat envisager.
 
 Seul l'offrant potentiel est engagé par le pacte préférence, rien n'oblige le bénéficiare à donné une suite à cet avant-contrat. Le non-respect du 
 pacte de préférence qui, se traduit par la conclusion du contrat entre l'offrant est une autre partie que le bénéficiaire, est sanctionné.
@@ -59,4 +58,35 @@ Selon:
 > Chacun est libre de contracter ou de ne pas contracter, de choisir son cocontractant et de déterminer le contenu et la forme du contrat dans les 
 > limites fixées par la loi
 
+Ce principe dit de **la liberté contractuelle** recouvre 4 composantes:
+* la liberté de contracté ou non
+* la liberté de choisir sont contractant, la 
+* liberté de fixer le contenu du contrat
+* liberté de choisir la forme du contrat.
+
+La forme des contrats et libre tous les modes d'expressions de l'accord des volontés sont donc admis:
+* l'écrit
+* la parole
+* les gestes (bras levé, poignée de main)
+
+Cependant, ce principe a des exceptions par exemple les status d'une société sont obligatoirement consigné par écritn de même les autres composantes 
+de la liberté sont limitées par des dispositions légales ou réglementaires. Le contenu du contrat est librement fixé dans la limite de ce que la loi 
+autorise.
+
+### b. L'obligation d'informations
+> article 1112 - 1 du code civil
+>
+> Impose une obligation d'informations à tous les cas où une des parties connait une information dont l'importance est déterminante pour
+> le consentement de l'autre partie qui ignore cette information ou qui fait confiance à son cocontractant
+
+#### Cas pratique
+
+**1.**  
+Non il ne peut pas prétendre à une indemnisation car le délai d'un mois est dépassé et c'est la seul levée d'option qui pouvait impliquer Panier de 
+Campagne
+
+**2.**  
+Oui car c'est une promesse
+
+**3.**  
 
