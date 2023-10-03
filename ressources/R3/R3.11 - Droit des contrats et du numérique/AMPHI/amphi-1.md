@@ -82,11 +82,74 @@ autorise.
 #### Cas pratique
 
 **1.**  
-Non il ne peut pas prétendre à une indemnisation car le délai d'un mois est dépassé et c'est la seul levée d'option qui pouvait impliquer Panier de 
-Campagne
+Non il ne peut pas prétendre à une indemnisation car le délai d'un mois est dépassé et c'est la seul option qui pouvait impliquer Panier de 
+Campagne, la rupture est motivé et il n'y a pas d'intention de nuir.
 
 **2.**  
-Oui car c'est une promesse
+Oui car il s'agit d'un contrat unilatéral donc seul le prometteur est engagé, cependant, selon l'options, au bout d'un mois le contrat sera 
+rendu caduque et la SCI sera donc libre de passer le contrat avec quelqu'un d'autre.
 
 **3.**  
+Panier de Campagne sera engagé dès la levée de l'option.
 
+## 2. Les conditions de validité d'un contrat
+### A. Le consentement
+#### a. L'existence du consentement
+L'offre doit être ferme et précise, l'acceptation doit être donnée sans conditions
+
+#### b. L'absence de vice dans le consentement
+Il est indispensable que la volonté des contractants soit sans vices, c'est-à-dire qu'elle ne soit entachée d'aucun défaut qui la priverai de sa 
+pertinence. La loi prévoit 3 vices du consentement sanctionné par la nullité du contrat :
+* Seul l'erreur sur un élément essentiel du contrat
+	* Qualité essentielle de la prestation
+	* Erreur sur la personne du cocontractant, lorsque le contrat est conclu en considération des qualités de cette personne
+* Le dol, il s'agit d'une erreur provoqué par les manœuvres, les mensonges de l'autre partie qui ont joué un rôle déterminant dans la conclusion du 
+contrat, c'est un tromperie émanant du contrat et provoquant une erreur sur les qualités essentielles de la prestation sur sa valeur ou sur un simple 
+motif du contrat (triche sur le compteur de kilomètre d'un véhicule)
+* La violence, physique ou psychologique, c'est une menace d'un mal physique ou morale injuste et illégitime émanant du cocontractant ou d'un tier de 
+nature à faire mettre un sentiment de crainte
+
+### B. La capacité
+La capacité juridique peut se définir comme l'aptitude à être titulaire de droit et à les exercer.
+
+#### a. Le cas des mineurs et de certains majeurs
+Pour s'engager valablement dans un contrat il faut disposer de la capacité juridique, c'est-à-dire, l'aptitude à être titulaire de droit et à les 
+exercer. Si le loi e, fait une condition de validité c'est pour pouvoir remettre en cause les obligations contractées par ceux que l'imcapacité 
+protège, comme les mineurs et certains majeurs victime d'une altération de leur factulté personnelle. Les mineur et les majeurs protégé peuvent 
+prendre des risques inconsidérer dans la vie des affaires.
+
+D'autres personnes sont frappées d'incapacité dans un but de sanction, il s'agit des personnes qui ont été condamné à une peines d'emprisonnement pour 
+des infractions graves et aussi les dirigeants d'entreprises qui ont été liquidé à la suite de fraude qu'ils ont commise.
+
+#### b. Le cadre des personnes morales
+La loi prévoit que les dirigeants de société ou autre personnes morales doivent les représenter. À défaut de représentation, ces sujets de droits sans 
+consistence physique ne pourrait pas avoir de relations juridiques. En principe, les conventions sont formées par la rencontre des volontés des 
+parties. Cependant, il arrive que l'un des cocontractants ne participe pas directement à la conclusion de l'accord, il a recours à la représentation, 
+qui est le méchanisme juridique par lequel une personne, le représentant agis par le bien d'une autre personne le représenté. Ainsi, ce méchanisme 
+permet aux personnes morales de contracter par le biais de personnes physiques qui le dirige.
+
+Dans la vie des affaires la représentation résulte d'un mandat, le mandant est le représenté et le mandataire est son représentant. Dès qu'un accord 
+est trouvé le contrat produit ses effets pour le représenté comme s'il l'avait conclu lui même.
+
+### C. Le contenu du contrat
+#### a. Le contenu licite du contrat
+> article 1162 du Code Civil
+
+Vise de façon expresse deux éléments du contenu du contrat:
+* La licéité des stipulations
+	* le contrat ne doit pas être contraire à l'ordre publique
+	* la prestation promise par chaque partie doit être licite
+* La licéité du but
+	* l'objectif poursuivi par les parties représente la cause du contrat pour chacun, pour déterminer la licéité du contenu du contrat il faut 
+rechercher les mobiles qui animent les contractants lors de la conclusion des contrats. La loi précise que le contrat est nul même si une seule des 
+parties poursuit un but illicite même si ce but est inconnu de son cocontractant.
+
+#### b. Le contenu certains du contrat
+* Il doit exister, sera donc annulé un contrat portant sur une chose qui était détruite au moment de la conclusion du contrat sans que les parties le 
+sachent
+* La prestation peut être actuel ou futur
+* La prestation doit être possible, elle sera annulé si elle est impossible
+* La prestation doit être déterminé et déterminable, c'est-à-dire qu'elle doit pouvoir "être déduite du contrat ou par référence au usage ou aux 
+relations antérieurs des parties, sans qu'un nouvel accord des parties soit néccessaire"
+
+Si l'obligation consiste en un service ou une abstention le contrat doit préciser à quoi s'engage la partie.
