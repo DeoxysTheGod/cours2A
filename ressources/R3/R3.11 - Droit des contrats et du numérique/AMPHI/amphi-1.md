@@ -159,25 +159,6 @@ Si l'obligation consiste en un service ou une abstention le contrat doit précis
 Si l'une des conditions de validité du contrat fait défaut la sanction est la nullité du contrat. Cette nullité du contrat entraine la dispartition de 
 tous les effets du contrats avec si possible la restitution qui en découle. Dans tous les cas où l'action en nullité n'est pas limité à un moindre 
 temps par une loi particulière, le délai pour agir est de 5 ans. Il existe deux type de nullité :
-* 
-* 
-
-|           |                                                                                                                                                                              Nullité relative                                                                                                                                                                               |Nullité absolue|
-|:---------:|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:-------------:|
-|En cas d'atteinte|                                                                                                                                               À un intérêt privé: absence de consentement, vices du consentement, incapacité                                                                                                                                                |À l'intérêt général: contenu illicite|
-|À la demande de|                                                                                                                                                                       La victime ou son représentant                                                                                                                                                                        |Toute personne justifiant d'un intérêt à agir|
-|Dans un délai de| 5 ans à compter, en principe, du jour où le titulaire à l'action a eu connaissance de la cause de nullité. Toutefois, dans certains cas, le point de de départ du délai est différent: - en cas  de violance, le délai ne court qu'à compter du jour où elle a cessé - à l'égard des actes faits par un mineur, il ne court qu'à compter de la majorité ou del'émancipation ||
-|Entrainant|                                                                                                                                                 L'anéantissement rétroactif du contrat: il est censé ne jamais avoir existé                                                                                                                                                 ||
-
-> À finir
-
-#### Exercice 4 (feuille panier de campagne)
-
-**4.**  
-Erreur sur un élément du contrat
-
-**5.**  
-Le contenu certains du contrat: il doit exister, sera donc annulé un contrat portant sur une chose qui était détruite au moment de la conclusion du contrat sans que les parties le sachent
 
 <table>
 	<thead>
@@ -213,29 +194,72 @@ Le contenu certains du contrat: il doit exister, sera donc annulé un contrat po
 	</tbody>
 </table>
 
+#### Cas pratique (feuille panier de campagne)
+
+**4.**  
+Erreur sur un élément du contrat
+
+**5.**  
+Le contenu certains du contrat: il doit exister, sera donc annulé un contrat portant sur une chose qui était détruite au moment de la conclusion du contrat sans que les parties le sachent
+
 ## 3. Les clauses du contrat
 
 ### A. Relative au prix
 
-Entre professionnel, les engagements contractuels prévoient le plus souvent un prix à payer,
-la vente est au cœur des affaires, tous comme la soutraitance les divers contrats de service ou 
-entreprises qui imposent également un prix à payer.  
-Le législateur précise que le prix doit être
-déterminé dès la conclusion du contrat.  
-Cette connaisance par les deux parties d'une obligation essentielle du contrat est un gage de sécurité
-pour chacune d'elle.  
-Toutefois, pour les contrats cadres et et les contrats de presatiton de service, le Code Civil
-(article 11-64 et 11-65) affirme que le prix peut être fixé par le créancier en l'absence d'accord
-des parties avant leurs éxécutions.  
-Cependant, il existe des limites à la fixation du prix par une seule des parties. Ainsi, la
-partie qui fixe le prix doit être en mesure de le justifier en cas de contestation.
-Si le prix apparait abusif au juge saisi, le juge peut décider de faire attribuer des dommages
-intérêts à celui qui a subit l'abut.
+Entre professionnel, les engagements contractuels prévoient le plus souvent un prix à payer, la vente est au cœur des affaires, tous comme la 
+soutraitance les divers contrats de service ou entreprises qui imposent également un prix à payer.  
+Le législateur précise que le prix doit être déterminé dès la conclusion du contrat.  
+Cette connaisance par les deux parties d'une obligation essentielle du contrat est un gage de sécurité pour chacune d'elle.  
+Toutefois, pour les contrats cadres et et les contrats de presatiton de service, le Code Civil (article 11-64 et 11-65) affirme que le prix peut être  
+fixé par le créancier en l'absence d'accord des parties avant leurs éxécutions.  
+Cependant, il existe des limites à la fixation du prix par une seule des parties. Ainsi, la partie qui fixe le prix doit être en mesure de le 
+justifier en cas de contestation.
+Si le prix apparait abusif au juge saisi, le juge peut décider de faire attribuer des dommages intérêts à celui qui a subit l'abut.
 
 ### B. Relative à l'éxécution
 
-Lors de la vente d'un bien, si le payement ne se fait pas au contant, le vendeur peu insérer
-une close de réserve de propriété. La propriété du bien cédé ne sera transférer à l'acheteur qu'après
-réglement total du prix.  
-L'avantage de cette close est manifeste si l'acheteur est confronté à des difficultés de paiement
-pendant le cas d'une entreprise en cessation de paiement.
+Lors de la vente d'un bien, si le payement ne se fait pas au contant, le vendeur peu insérer une clause de réserve de propriété. La propriété du bien 
+cédé ne sera transférer à l'acheteur qu'après réglement total du prix.  
+L'avantage de cette clause est manifeste si l'acheteur est confronté à des difficultés de paiement pendant le cas d'une entreprise en cessation de 
+paiement.  
+Le vendeur impayé pour réclamer la restitution du bien.
+
+La clause pénal fixe d'avance le montant précis de la réparation due par le débiteur en cas d'inéxécution. Elle est donc plus efficace que la clause 
+**limitative de responsabilité** puisqu'elle empêche toute contestation sur l'importance du préjudice, son rôle préventatif qui facilite la conclusion 
+du contrat si le créancier estime le montant des dommages et intérêts est raisonnable.
+
+#### Cas pratique (feuille panier de campagne)
+
+**6. **  
+C'est un contrat  de transport de marchandise entre Ruby et Panier de campagne
+
+**7. **  
+Article 8:  
+Prix du transport :
+* 8€/Kg de texitel
+* 2,50€/Kg d'autres produits
+
+Ce prix pourra être révisé en fonction de l'augmentation du prix du carburant à proportion de l'augmentation du prix du carburant.  
+Tous les prix sont calculés hors taxes.
+
+**8. **  
+article 9:  
+Indémnité pour des dommages résultant de la mauvaise éxécution ou de l'niéxécution du transporteur
+article 10:  
+Indémnité de retard à hauteur du prix du transport
+
+## 4. Les effets du contrat
+### A. À l'égard des parties
+
+Une fois conclu, le contrat a la même force que la loi, c'est-à-dire que les parties sont obligées de respecter leurs engagements, cette règle est la 
+suite logique de la liberté contractuelle. La force obligatoire du contrat garantie la sécurité des transactions et bien sur cette obligation peut 
+disparaitre par la volonté des deux parties.
+
+### B. À l'égard des tiers
+
+* **Le principe** : le contrat ne produit d'effet qu'à l'égard des parties qui l'ont conclu. Les tiers ne suibissent donc aucune conséquence 
+du contrat.  
+Dans une chaîne de contrat, chacun des contractants n'est lié qu'à celui avec lequel il a conclu.
+
+* **L'exception** : Dans les cas de stipulation pour autrui, un tier au contrat bénéfici de l'éxécution des obligations convenu entre les parties, le 
+stipulant d'une part et le prométant d'autre part.
