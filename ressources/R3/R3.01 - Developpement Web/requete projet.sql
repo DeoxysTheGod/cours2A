@@ -4,7 +4,7 @@ CREATE OR REPLACE TABLE ACCOUNT (
     image BLOB,
     display_name VARCHAR(15),
     creation_date DATE,
-    last_connection_date DATE,
+    last_connection_date DATETIME,
     admin BOOLEAN
 );
 
@@ -20,7 +20,7 @@ CREATE OR REPLACE TABLE TICKET (
 	ticket_id INT AUTO_INCREMENT PRIMARY KEY,
     title VARCHAR(125),
     message VARCHAR(1000),
-    date DATE,
+    date DATETIME,
     author VARCHAR(15)    
 );
 
