@@ -263,3 +263,4 @@ Dans une chaîne de contrat, chacun des contractants n'est lié qu'à celui avec
 
 * **L'exception** : Dans les cas de stipulation pour autrui, un tier au contrat bénéfici de l'éxécution des obligations convenu entre les parties, le 
 stipulant d'une part et le prométant d'autre part.
+
