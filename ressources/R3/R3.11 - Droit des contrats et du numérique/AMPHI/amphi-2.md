@@ -59,4 +59,42 @@ compte possible)
 ### B. L'information du cyberacheteur
 
 Tout contrat de vente électronique exige l'adhésion du cyberconsommateur au **Conditions Générales de Vente** (*CGV*) faites par le professionnel. En 
-pratique il est rare que le cyberacheteur est lu les *CGV*. Toutefois, la jurisprudence 
+pratique il est rare que le cyberacheteur est lu les *CGV*. Toutefois, la jurisprudence admet que le clique valide les *CGV* et marquent l'acception 
+de l'acheteur. Ainsi conformement au disposition du code de la consommation, le profesionnel qui propose un contrat de vente électronique doit:
+* Communiquer au consommateur de manière lisible et compréhensible certaines informations tel que celle relative au coordonnées du professionnel.
+* Rappeler au consommateur, avant qu'il ne passe sa commande, de manière lisible et compréhensible, les informations relatives aux caractéristiques 
+essentielles des biens ou des services qui font l'objet de la commande, à leurs prix, etc.
+* Veiller à ce que le consommateur, lors de sa commande, reconnaisse explicitement son obligation de paiement
+* Indiquer clairement et lisiblement, au plus tard au début du processus de commande, les moyens de paiement qu'il accepte et les eventuelles 
+restrictions de livraison.
+* Indiquer les conditions, le délai et les modalités d'exercices du droit de rétractation lorsqu'il existe.
+
+### C. La conclusion du contrat
+
+Selon l'article 1127-2 du Code Civil, le contrat n'est valablement conclu que si le destinataire de l'offre a eu la possibilité de vérifier le détails 
+de sa commande et son prix total et de corriger d'evenetuelles erreurs avant de confirmer celle-ci, pour accepter définitivement le contrat. Cette 
+procédure dit du *"double clic"* est destinée à protéger le cyberacheteur des erreurs de manipulation et de s'assurer qu'il s'engage en parfaite 
+connaissance de cause, notament concernant les frais de port. Une fois la commande validé par le cyberconsommateur, le cybervendeur doit accusé 
+réception de la commande sans délai et par voie électronique.  
+En outre, selon l'article L213-1 du code de la consommation le contrat électronique doit être archivé par le professionnel lorsqu'il porte sur une 
+somme supérieur ou égale à 120€, délai de conservation 10 ans.  
+Enfin, selon l'article 1127-1 du Code Civil, si le contrat est archivé, le cyberacheteur doit pouvoir connaitre les modalités d'archivage du contrat 
+et les conditions d'accés à se contrat.
+
+### D. Le droit de rétractation du cyberacheteur
+
+En raison de la dématérialisation du produit au moment de l'achat en ligne, il est possible que le produit acheter ne correspondent pas aux attente du 
+client qui s'est déterminer à partir de photos, de caractéristique de produit et des avis des consommateur. Il était donc indispensable d'associer aux 
+achats en ligne la possibilité d'une rétractation. Ainsi, le droit de rétractation préve par l'article L221-18 du code de la consommation, permet à 
+l'achateur de revenir à sa décision d'achat sans avoir à se justifier et de renvoyer la marchandise afin d'en obtenir le remboursement sans pénalités. 
+Le consommateur doit exercer son droit de rétractation en informant le professionnel au plus tard dans les 14 jours à compté de la réception de la 
+commande. Selon l'article L221-23 du code de la consommation, le consommateur ne supporte que les coûts directes de renvoi des biens sauf si le 
+professionnel accepte de les prendre à sa charge ou s'il a omis d'informer le consommateur que les coûts sont à la charge du consommateur.
+
+### Cas pratique
+
+**3. **  
+La possibilité de retour pour le consommateur est obligatoire dans un délai minimal de 14 jours.
+
+**4. **  
+Les frais de retour des biens ne sont pas pris en charge par le professionnel.
