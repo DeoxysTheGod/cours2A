@@ -15,7 +15,7 @@ du Code Civil, qui dispose que :
 > * qu'il soit établi et conservé dans des conditions de nature à en garantir l'intégrité
 
 C'est à la charge du professionnel de prouver qu'un email est clairement identifié par la signature électronique certifié et que le document n'a pas 
-pu être falsifier. Si l'une des deux conditions ne sont pas respeecter, il n'est pas considéré comme un preuve.
+pu être falsifier. Si l'une des deux conditions ne sont pas respecter, il n'est pas considéré comme un preuve.
 
 À défaut l'email vaudra comme un commencement de preuve par écrit et le juge sera libre d'en apprécier al valeur probante.
 
@@ -38,7 +38,7 @@ Oui
 
 le développement du numérique entraine la conslusion de contrat de vente par voie électronique entre cybermarchant ou cybervendeur et les 
 cyberconsommateur. Le contrat de vente par voie électronique est un contrat spécifique de par l'échange de consentement réalisé à distance. L'achat 
-sur internet comporte des risuqes tel que ceux relatifs à la sécurité des données, aussi le droit de consommation à était complété par de nouvelle 
+sur internet comporte des risques tel que ceux relatifs à la sécurité des données, aussi le droit de consommation à était complété par de nouvelle 
 obligations à la charge du cybervendeur afin de renforcer la protection du client, des clauses figurent obligatoirement dans ces contrats de vente 
 électronique.
 
@@ -98,3 +98,19 @@ La possibilité de retour pour le consommateur est obligatoire dans un délai mi
 
 **4. **  
 Les frais de retour des biens ne sont pas pris en charge par le professionnel.
+
+## 3. Le contrat de prestation de service numérique
+
+Le développement du numérique rend indispensable le recours par les entreprises au service de prestataire informatique pour les besoins de leurs 
+activités. Les contrats de prestation de service numérique (hébergement de donnéesn développement de logiciel ou de site internet maintenance matériel 
+ou logiciel, ...) se multiplient. Ces contrats sont soumis au droit commun des contrats mais leur nature impose la rédaction de clause spécifique. Les 
+clauses relative à l'obligation de secret et de confidentialité imposent au parti de ne pas divulguer des informations et documents auxquels elles 
+ont accès aux cours de l'éxecution du contrat de prestation, les contrats de prestation informatique étant des contrats à éxectutions successives, 
+contiennent généralement une clause d'indexation qui permet d'indexer le prix de la prestation en fonction d'un indice de référence. Il s'agit souvent 
+de l'indice SYNTEC qui mesure l'évolution du coup de la main d'œuvre notament dans le domaine informatique. Néanmoins, il est interdit de fixer une 
+clause d'indexation fondé sur le niveau général des prix ou des salaires.  
+Dans un contrat d'hébergement de données, figure des clauses relatives aux contenus des données et aux droits d'auteurs. Ces clauses protègent le 
+prestataire en excluant sa responsabilité en cas de contenu illégal par exemple.  
+Enfin, Il existe une clause de "réversibilité", elle a pour but de permettre une reprise facilité de la gestion de la fonction externalisé par un 
+autre prestataire ou le client lui même. Elle permet au client de récupérer les données cruciales pour le fonctionnement de l'entreprise et ainsi 
+d'éviter la perte ou la fuite de données qui comprometraient la continuité de l'activité économique.
