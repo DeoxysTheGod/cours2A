@@ -1,5 +1,18 @@
 # Les contrats informatiques
 
+# Sommaire
+* [1. La preuve électronique](#1-la-preuve-électronique)
+	* [A. Les conditions de validité des documents dématérialisés](#a-les-conditions-de-validité-des-documents-dématérialisés)
+	* [B. Signature électronique](#b-signature-électronique)
+	* [Cas pratique](#cas-pratique)
+* [2. Contrat de vente électronique avec les consommateurs](#2-contrat-de-vente-électronique-avec-les-consommateurs)
+	* [A. La protection préalable au contrat](#a-la-protection-préalable-au-contrat)
+	* [B. L'information du cyberacheteur](#b-linformation-du-cyberacheteur)
+	* [C. La conclusion du contrat](#c-la-conclusion-du-contrat)
+	* [D. Le droit de rétractation du cyberacheteur](#d-le-droit-de-rétractation-du-cyberacheteur)
+	* [Cas pratique](#cas-pratique)
+* [3. Le contrat de prestation de service numérique](#3-le-contrat-de-prestation-de-service-numérique)
+
 Le développement du numérique impact le droit de la preuve et le droit des contrats, en particulier le contrat de vente au consommateur. Il a 
 également donné jour au contrat de prestation de service numérique.
 

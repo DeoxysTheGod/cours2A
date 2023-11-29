@@ -1,5 +1,36 @@
 # La formation d'un contrat
 
+# Sommaire
+* [A. La situation précontractuelle](#a-la-situation-précontractuelle)
+	* [a. les pourparlers et leur rupture](#a-les-pourparlers-et-leur-rupture)
+	* [b. Les avant-contrats](#b-les-avant-contrats)
+		* [Pacte de préférence](#pacte-de-préférence)
+		* [Promesse unilatéral du contrat](#promesse-unilatéral-du-contrat)
+		* [Promesse bilatérale du contrat](#promesse-bilatérale-du-contrat)
+* [B. La situtation contractuelle](#b-la-situtation-contractuelle)
+	* [a. Le principe de la liberté contractuelle](#a-le-principe-de-la-liberté-contractuelle)
+	* [b. L'obligation d'informations](#b-lobligation-dinformations)
+		* [Cas pratique](#cas-pratique)
+* [2. Les conditions de validité d'un contrat](#2-les-conditions-de-validité-dun-contrat)
+	* [A. Le consentement](#a-le-consentement)
+		* [a. L'existence du consentement](#a-lexistence-du-consentement)
+		* [b. L'absence de vice dans le consentement](#b-labsence-de-vice-dans-le-consentement)
+	* [B. La capacité](#b-la-capacité)
+		* [a. Le cas des mineurs et de certains majeurs](#a-le-cas-des-mineurs-et-de-certains-majeurs)
+		* [b. Le cadre des personnes morales](#b-le-cadre-des-personnes-morales)
+	* [C. Le contenu du contrat](#c-le-contenu-du-contrat)
+		* [a. Le contenu licite du contrat](#a-le-contenu-licite-du-contrat)
+		* [b. Le contenu certains du contrat](#b-le-contenu-certains-du-contrat)
+	* [D. La sanction du non-respect](#d-la-sanction-du-non-respect)
+		* [Cas pratique (feuille panier de campagne)](#cas-pratique-feuille-panier-de-campagne)
+* [3. Les clauses du contrat](#3-les-clauses-du-contrat)
+	* [A. Relative au prix](#a-relative-au-prix)
+	* [B. Relative à l'éxécution](#b-relative-à-léxécution)
+		* [Cas pratique (feuille panier de campagne)](#cas-pratique-feuille-panier-de-campagne)
+* [4. Les effets du contrat](#4-les-effets-du-contrat)
+	* [A. À l'égard des parties](#a-À-légard-des-parties)
+	* [B. À l'égard des tiers](#b-À-légard-des-tiers)
+
 ## A. La situation précontractuelle
 
 Des négociations appelées **"pourparler"** sont parfois nécéssaire en vue de fixer des engagements.

@@ -1,5 +1,15 @@
 # Droit des données et protection de la vie privée
 
+# Sommaire
+* [1. Les enjeux de la protection des données à caractère personnel](#1-les-enjeux-de-la-protection-des-données-à-caractère-personnel)
+	* [A. Le besoin de protection des données à caractère personnel](#a-le-besoin-de-protection-des-données-à-caractère-personnel)
+	* [B. Les règles juridiques protégeant les données à caractère personnel](#b-les-règles-juridiques-protégeant-les-données-à-caractère-personnel)
+	* [C. L'organe de protection des données à caractère personnel](#c-lorgane-de-protection-des-données-à-caractère-personnel)
+	* [D. La protection contre l'usurpation de l'identité numérique](#d-la-protection-contre-lusurpation-de-lidentité-numérique)
+* [2. Les conséquences juridiques de la protection des données personnelles pour l'entreprise](#2-les-conséquences-juridiques-de-la-protection-des-données-personnelles-pour-lentreprise)
+	* [A. Les obligations issues du RGPD pour l'entreprise](#a-les-obligations-issues-du-rgpd-pour-lentreprise)
+	* [B. La protection des données personnelles des salariés](#b-la-protection-des-données-personnelles-des-salariés)
+
 Dans un environnement de plus en plus numérique les individus laisse des traces en utilisant les nouvelles technologies d'informations et de 
 communications. Ils livrent ainsi des données à caractère personnel, informations relatives à leur vie personnelle, professionnelle, amicale, 
 sentimentale qui néccessitent d'être protégé par des règles juridiques. Et la protection mise en place par le droit doit être prise en compte et 
