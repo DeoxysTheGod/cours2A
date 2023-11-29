@@ -114,3 +114,35 @@ l'employeur d'affecter aux postes qui se créent ou se libèrent dans certains d
 l'entreprise. et d'ouverture de nouvelles succursales. Pour le salarié la mise en œuvre de cette clause s'accompagne souvent d'une promotion.  
 Dès lors que le salarié à accepté la clause, il ne lui est pas possible de refuser de rejoindre le nouveau lieu d'affectation, sauf à faire une faute 
 professionnel pouvant être sanctionné par son licenciment.
+
+#### 2. Conditions de validité
+
+Au regard des inconvénients possible de la mutation géographique imposé au salarié et dans le silence de la loi la jurice prudence a posé des 
+exigences à la validité de cette clause:
+* Le salarié doit savoir à l'avance quel(s) lieu(x) il pourrait être amené à rejoindre. Le contrat doit être suffisament sur ce point.
+* La mise en œuvre de la mutation du salarié doit être justifié par l'intérêt de l'entreprise.
+* L'employeur doit tenir compte de la situation personnelle et familiale.
+* Un délai de prévenance raisonnable doit être respecté avant la mutation du salarié.
+
+### C. La clause de confidentialité
+
+#### 1. Définition et effet
+
+Cette clause interdit au salarié de révéler des informations sensible de nature technique, commerciale, stratégique dont il a connaissance. Cette 
+discrétion doit être respecté sous peine à l'égard des personnes extérieur à l'entreprise comme à l'égard des collègue de travail donc en interne. 
+Cette clause produit ces effets même après que le salarié ai quitté l'entreprise.
+
+#### 2. Conditions de validité
+
+Cette clause impérativement inscrite dans le contrat de travail elle doit être justifié par la protection des intérêts de l'entreprise et la nature 
+des fonctions du salarié. Elle doit aussi préciser quelle sorte d'informations doivent être gardé secrète.
+
+### D. La clause de non-concurrence
+
+#### 1. Définition et effets
+
+Le chef d'entreprise prolonge l'obligation de loyauté du salarié au dela du contrat de travail. La clause de non-concurrence interdit au salarié de se 
+faire embaucher par un concurrent de son employeur ou de s'établir à son propre compte pour le concurrencer après l'éventuelle rupture de son contrat 
+de travail. Les inconvénients est qu'il doit respecter son engagement sinon il engage sa responsabilité contractuelle, pourtant il subit une atteinte 
+à sa liberté de travailler et d'entreprendre, pour l'employeur cette disposition lui assure qu'un ancien salarié ne pourra pas dévoiler à un 
+concurrent des renseignements commerciaux ou techniques importants, ni qu'il le concurrencera en profitant de l'expérience acquise.
