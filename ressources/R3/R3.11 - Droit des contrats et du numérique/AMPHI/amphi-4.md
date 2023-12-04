@@ -1,6 +1,28 @@
 # Le contrat de travail et son évolution
 
 # Sommaire
+* [I. Le régime juridique du salarié et le contrat de travail](#i-le-régime-juridique-du-salarié-et-le-contrat-de-travail)
+	* [A. Les régimes juridiques du salarié et du travailleur indépendant](#a-les-régimes-juridiques-du-salarié-et-du-travailleur-indépendant)
+		* [1. Les différents status des travailleurs](#1-les-différents-status-des-travailleurs)
+		* [2. Le salariat et le contrat de travail](#2-le-salariat-et-le-contrat-de-travail)
+	* [B. Les différents types de contrat de travail](#b-les-différents-types-de-contrat-de-travail)
+		* [1. Le CDI](#1-le-cdi)
+		* [2. Contrat de travail précaire](#2-contrat-de-travail-précaire)
+* [II. Les clauses particulière d'un contrat de travail](#ii-les-clauses-particulière-dun-contrat-de-travail)
+	* [A. La clause d'essai](#a-la-clause-dessai)
+		* [1. Définition et effet](#1-définition-et-effet)
+		* [2. Les conditions de validité](#2-les-conditions-de-validité)
+	* [B. La clause de mobillité](#b-la-clause-de-mobillité)
+		* [1. Définition et effet](#1-définition-et-effet)
+		* [2. Conditions de validité](#2-conditions-de-validité)
+	* [C. La clause de confidentialité](#c-la-clause-de-confidentialité)
+		* [1. Définition et effet](#1-définition-et-effet)
+		* [2. Conditions de validité](#2-conditions-de-validité)
+	* [D. La clause de non-concurrence](#d-la-clause-de-non-concurrence)
+		* [1. Définition et effets](#1-définition-et-effets)
+* [III. Les modifications du rapport d'emploi](#iii-les-modifications-du-rapport-demploi)
+	* [A. Les modifications affectant le travail du salarié](#a-les-modifications-affectant-le-travail-du-salarié)
+	* [B. Le transfert d'entreprise](#b-le-transfert-dentreprise)
 
 Il existe plusieurs types de contrat dont le contenu peut être enrichi de clauses spécifiques et qui peut connaitre des évolutions.
 
@@ -146,3 +168,22 @@ faire embaucher par un concurrent de son employeur ou de s'établir à son propr
 de travail. Les inconvénients est qu'il doit respecter son engagement sinon il engage sa responsabilité contractuelle, pourtant il subit une atteinte 
 à sa liberté de travailler et d'entreprendre, pour l'employeur cette disposition lui assure qu'un ancien salarié ne pourra pas dévoiler à un 
 concurrent des renseignements commerciaux ou techniques importants, ni qu'il le concurrencera en profitant de l'expérience acquise.
+
+## III. Les modifications du rapport d'emploi
+
+### A. Les modifications affectant le travail du salarié
+
+<img src="tableau.webp>
+
+### B. Le transfert d'entreprise
+
+L'entreprise peut être amené à être restructurer après une acuquisition, session d'actif... Le rachat par une autre entreprise donne lieu à un 
+transfert de propriété entre les mains d'un nouvel acquéreur.
+
+L'article L1224-1 du Code du Travail, pose le principe du maintient des contrats de travail par jour, la nouvelle entreprise doit donc reprendre les 
+salariés de son prédécéceur, respecter le contenu du contrat de travail et versé les salaires impayés s'il y a lieu. Dans cette situation de transfert 
+d'entreprise un dispositif de dérrogation autorise les licenciments économiques préalable pour les entreprises en difficulté, qu'elle veuille 
+sauvegarder leur compétitivité de l'entreprise qu'elle affronte leur difficulté économique ou des mutations technologiques. Cette dérrogation n'est 
+valable que pour les entreprises de plus 50 salariés.
+
+
