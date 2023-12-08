@@ -173,7 +173,7 @@ concurrent des renseignements commerciaux ou techniques importants, ni qu'il le 
 
 ### A. Les modifications affectant le travail du salarié
 
-<img src="tableau.webp>
+<img src="tableau.webp" alt="image non trouvé">
 
 ### B. Le transfert d'entreprise
 
