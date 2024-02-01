@@ -1,0 +1,223 @@
+<!-- Quentin BEAUQUIER -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<a href="../index.html">home</a>
+<h1>Partie 1</h1>
+<div>
+    <canvas id="canvas" height="500" width="500"></canvas>
+</div>
+<input type="button" id="add-circle" value="Ajout d'un cercle">
+
+<table id="table">
+    <thead>
+    <tr>
+        <th style="width: 100px">Rayon</th>
+        <th style="width: 50px">X</th>
+        <th style="width: 50px">Y</th>
+        <th style="width: 100px">Aire</th>
+        <th style="width: 100px">Couleur</th>
+        <th style="width: 50px">Supprimer</th>
+    </tr>
+    </thead>
+    <tbody>
+
+    </tbody>
+</table>
+
+<script>
+class Circle {
+    id;
+    static count = 0;
+    constructor(x, y, radius, color = '#9d80fd') {
+        this.id = Circle.count;
+        this.x = x;
+        this.y = y;
+        this.radius = radius;
+        this.color = color;
+        Circle.count++;
+
+        this.#addDivArea()
+    }
+
+    draw(context) {
+        context.beginPath();
+        context.arc(this.x, this.y, this.radius, 0, 2 * Math.PI, false);
+        context.fillStyle = this.color;
+        context.fill();
+    }
+
+    calcArea() {
+        return Math.round(Math.PI * this.radius * this.radius);
+    }
+
+    changeValue(radius, x, y, color) {
+        this.radius = radius;
+        this.x = x;
+        this.y = y;
+        this.color = color;
+    }
+
+    #addDivArea() {
+        const table = document.getElementById('table');
+        const tbody = table.getElementsByTagName('tbody')[0];
+        const tr = document.createElement('tr');
+        tr.id = 'circle-' + this.id;
+
+        const tdRadius = document.createElement('td');
+        const rinput = document.createElement('input');
+        rinput.id = 'radius-' + this.id;
+        rinput.type = 'number';
+        rinput.value = this.radius;
+        tdRadius.appendChild(rinput);
+
+        const tdX = document.createElement('td');
+        const xinput = document.createElement('input');
+        xinput.id = 'pos-x-' + this.id;
+        xinput.type = 'number';
+        xinput.classList.add('position-input');
+        xinput.value = this.x;
+        tdX.appendChild(xinput);
+
+        const tdY = document.createElement('td');
+        const yinput = document.createElement('input');
+        yinput.id = 'pos-y-' + this.id;
+        yinput.type = 'number';
+        yinput.classList.add('position-input');
+        yinput.value = this.y;
+        tdY.appendChild(yinput);
+
+        const tdArea = document.createElement('td');
+        const area = document.createElement('span');
+        area.id = 'area-' + this.id;
+        area.innerText = this.calcArea();
+        tdArea.appendChild(area);
+
+        const tdColor = document.createElement('td');
+        const color = document.createElement('input');
+        color.id = 'color-' + this.id;
+        color.type = 'color';
+        color.value = this.color;
+        tdColor.appendChild(color);
+
+        const tdDelete = document.createElement('td');
+        const deleteButton = document.createElement('button');
+        deleteButton.innerText = 'Supprimer';
+        deleteButton.addEventListener('click', function (event){
+            const tr = event.target.parentNode.parentNode;
+            if (tr) {
+                const id = tr.id.split('-')[1];
+                const circle = CircleArray[id];
+                if (circle) {
+                    delete CircleArray[id];
+                    tr.remove();
+                    const context = Canvas.getContext('2d');
+                    context.clearRect(0, 0, Canvas.width, Canvas.height);
+                    for (let key in CircleArray) {
+                        CircleArray[key].draw(context);
+                    }
+                }
+            }
+        });
+        tdDelete.appendChild(deleteButton);
+
+        tr.appendChild(tdRadius);
+        tr.appendChild(tdX);
+        tr.appendChild(tdY);
+        tr.appendChild(tdArea);
+        tr.appendChild(tdColor);
+        tr.appendChild(tdDelete);
+
+
+        tbody.appendChild(tr);
+
+    }
+}
+
+const Canvas = document.getElementById('canvas');
+const AddCircleInput = document.getElementById('add-circle');
+
+const CircleArray = {};
+
+const Table = document.getElementById('table');
+
+Table.addEventListener('change', function (event){
+    const tr = event.target.parentNode.parentNode;
+    if (tr) {
+        const id = tr.id.split('-')[1];
+        const circle = CircleArray[id];
+        if (circle) {
+            const radius = document.getElementById('radius-' + id).value;
+            const x = document.getElementById('pos-x-' + id).value;
+            const y = document.getElementById('pos-y-' + id).value;
+            const color = document.getElementById('color-' + id).value;
+            circle.changeValue(radius, x, y, color);
+            const area = document.getElementById('area-' + id);
+            area.innerText = circle.calcArea();
+            const context = Canvas.getContext('2d');
+            context.clearRect(0, 0, Canvas.width, Canvas.height);
+            for (let key in CircleArray) {
+                CircleArray[key].draw(context);
+            }
+        }
+
+    }
+})
+
+let selectedCircle = null;
+
+Canvas.addEventListener('mousedown', function(event) {
+    const rect = Canvas.getBoundingClientRect();
+    const x = event.clientX - rect.left;
+    const y = event.clientY - rect.top;
+
+    for (let key in CircleArray) {
+        const circle = CircleArray[key];
+        const distanceFromCenter = Math.sqrt(Math.pow(x - circle.x, 2) + Math.pow(y - circle.y, 2));
+
+        if (distanceFromCenter <= circle.radius) {
+            selectedCircle = circle;
+            break;
+        }
+    }
+});
+
+Canvas.addEventListener('mousemove', function(event) {
+    if (selectedCircle) {
+        const rect = Canvas.getBoundingClientRect();
+        const x = event.clientX - rect.left;
+        const y = event.clientY - rect.top;
+
+        selectedCircle.x = x;
+        selectedCircle.y = y;
+
+        document.getElementById('pos-x-' + selectedCircle.id).value = x;
+        document.getElementById('pos-y-' + selectedCircle.id).value = y;
+
+        const context = Canvas.getContext('2d');
+        context.clearRect(0, 0, Canvas.width, Canvas.height);
+        for (let key in CircleArray) {
+            CircleArray[key].draw(context);
+        }
+    }
+});
+
+Canvas.addEventListener('mouseup', function(event) {
+    selectedCircle = null;
+});
+
+AddCircleInput.addEventListener('click', function (event){
+   CircleArray[Circle.count] = new Circle(100, 100, 50);
+   CircleArray[Circle.count-1].draw(Canvas.getContext('2d'));
+});
+
+</script>
+
+</body>
+</html>
