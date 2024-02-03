@@ -1,7 +1,18 @@
-const displayButton = document.getElementById('displayBtn');
-const data = document.getElementById('data');
-const datas = document.getElementById('datas');
 
+const displayButton = document.getElementById('displayBtn');
+// p for displaying the temperature
+const data = document.getElementById('data');
+const dataTab = document.getElementById('dataTab');
+// tbody for displaying the history
+const tbody = document.getElementById('tbody');
+// tabs button
+const tabs = document.getElementById('tabs');
+// tab
+const historyTab = document.getElementById('historyTab');
+
+const abbrCelcius = document.createElement('abbr');
+abbrCelcius.setAttribute('title', 'degrés Celcius');
+abbrCelcius.innerHTML = '°C';
 
 let tab = []
 
@@ -18,23 +29,27 @@ function fillArray(n, min, max) {
 async function sendData(tab, timeout) {
     for (let i of tab) {
         await new Promise(resolve => setTimeout(resolve, timeout));
-        data.innerHTML = i;
+        data.innerHTML = i + abbrCelcius.outerHTML
         data.dispatchEvent(new Event('change'));
     }
 }
 
+// on data change
 data.addEventListener('change', () => {
-    changeColor(datas, parseInt(data.innerHTML));
-    showMessage();
+    changeColor(dataTab, parseInt(data.innerHTML));
+    showMessage(parseInt(data.innerHTML));
 });
 
-function showMessage() {
+function showMessage(value) {
     const message = document.getElementById('message');
-    if (data.innerHTML < 0) {
+    if (value < 0) {
+        message.hidden = false;
         message.innerHTML = 'Brrrrrrr, un peu froid ce matin, mets ta cagoule !';
-    } else if (data.innerHTML > 30) {
+    } else if (value > 30) {
+        message.hidden = false;
         message.innerHTML = 'Caliente ! Vamos a la playa, ho hoho hoho !!';
     } else {
+        message.hidden = true;
         message.innerHTML = '';
     }
 
@@ -56,6 +71,17 @@ function changeColor(target, value) {
     else
         target.classList.add('black-border');
 }
+
+tabs.addEventListener('click', (event) => {
+    console.log(event.target.id);
+    if (event.target.id === 'getTemp') {
+        dataTab.hidden = false;
+        historyTab.hidden = true;
+    } else if (event.target.id === 'getHistory') {
+        dataTab.hidden = true;
+        historyTab.hidden = false;
+    }
+});
 
 if (displayButton) {
     displayButton.addEventListener('click', async () => {
