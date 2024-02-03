@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap');
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #DCEDB9;
+
+    font-family: 'Roboto', sans-serif;
+}
+
+#canvas {
+    background-color: #D2E59E; /* Couleur de fond du canvas, à remplacer par la couleur de fond de votre formulaire */
+    border: 10px solid #2E5339; /* Bordure du canvas, à remplacer par la bordure de votre formulaire */
+    display: block;
+    margin: 0 auto; /* Centre le canvas horizontalement */
+}
+
+.snake {
+    fill: #5C73F2; /* Couleur du serpent, à remplacer par la couleur principale de votre formulaire */
+}
+
+.food {
+    fill: #4661D5; /* Couleur de la nourriture, à remplacer par la couleur secondaire de votre formulaire */
+}
+
+.score {
+    fill: #000; /* Couleur du score, à remplacer par la couleur du texte de votre formulaire */
+    font-family: Arial, sans-serif; /* Police du score, à remplacer par la police de votre formulaire */
+}

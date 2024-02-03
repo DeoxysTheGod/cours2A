@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulaire</title>
+    <link rel="stylesheet" href="formulaire.css">
+    <script src="formulaire.js" defer></script>
+</head>
+<body>
+
+<h1>Formulaire</h1>
+
+<form id="form">
+    <h2>Étape 1 : Identité</h2>
+    <div class="field radio-field">
+        <label>Civilité :</label>
+        <div id="civility" class="radio-container">
+            <input type="radio" id="monsieur" name="civilite" value="monsieur">
+            <label for="monsieur">Monsieur</label>
+            <input type="radio" id="madame" name="civilite" value="madame">
+            <label for="madame">Madame</label><br>
+        </div>
+    </div>
+    <div class="field">
+        <label for="name">Nom : </label>
+        <input type="text" id="name">
+    </div>
+    <div class="field">
+        <label for="firstname">Prénom : </label>
+        <input type="text" id="firstname">
+    </div>
+    <div class="field">
+        <label for="email">Email : </label>
+        <input type="email" id="email">
+    </div>
+    <div class="field">
+        <label for="phone">Téléphone : </label>
+        <input type="tel" id="phone">
+    </div>
+
+    <h2>Étape 2 : Adresse de livraison</h2>
+    <div class="field">
+        <label for="address">Adresse : </label>
+        <input type="text" id="address">
+    </div>
+    <div class="field">
+        <label for="zip">Code postal : </label>
+        <input type="text" id="zip">
+    </div>
+    <div class="field">
+        <label for="city">Ville : </label>
+        <input type="text" id="city">
+    </div>
+
+    <h2>Étape 3 : Informations CB</h2>
+    <div class="field radio-field">
+        <label>Type de carte :</label>
+        <div id="cardtype" class="radio-container">
+            <input id="visa" type="radio" name="cardtype" value="visa">
+            <label for="visa">Visa</label>
+            <input id="amEx" type="radio" name="cardtype" value="amex">
+            <label for="amEx">AmEx</label>
+            <input id="mastercard" type="radio" name="cardtype" value="mastercard">
+            <label for="mastercard">Mastercard</label>
+        </div>
+    </div>
+    <div class="field">
+        <label for="cardnumber">Numéro de carte : </label>
+        <input type="text" id="cardnumber">
+    </div>
+    <div class="field">
+        <label for="crypto">Cryptogramme : </label>
+        <input type="text" id="crypto">
+    </div>
+
+    <input id="submitBtn" type="submit" value="Valider">
+</form>
+
+</body>
+</html>

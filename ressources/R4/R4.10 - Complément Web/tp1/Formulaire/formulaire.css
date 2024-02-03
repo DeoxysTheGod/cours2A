@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap');
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #DCEDB9;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: .9rem;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 1rem;
+    background-color: #D2E59E;
+    border-radius: 10px;
+    width: 400px;
+    border: 2px solid #2E5339;
+}
+
+.field {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px 10px 10px;
+    background-color: #CBD081;
+    border-radius: 5px;
+    border: 2px solid #495F41;
+    margin: 2px;
+}
+
+/* Text Area Field */
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    background-color: #f8f8f8;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    width: 60%;
+
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus {
+    outline: 2px solid #495F41;
+}
+
+input[type="text"]:hover,
+input[type="email"]:hover,
+input[type="tel"]:hover {
+    background-color: #f0f0f0;
+}
+
+/* Radio Field */
+.radio-field {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.radio-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.radio-container label {
+    margin-right: 20px;
+}
+
+input[type="radio"] {
+    cursor: pointer;
+    appearance: none;
+    background-color: #DCEDB9;
+    border-radius: 50%;
+    outline: 2px solid #495F41;
+    width: 15px;
+    height: 15px;
+}
+
+input[type="radio"]:checked {
+    outline: 2px solid #495F41;
+    border: 2px solid #DCEDB9;
+    background-color: #495F41;
+}
+
+/* Submit Button */
+#submitBtn {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #2E5339;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#submitBtn:hover {
+    background-color: #495F41;
+}
+
+#submitBtn:disabled {
+    opacity: 50%;
+    background-color: #2E5339;
+    color: white;
+    cursor: not-allowed;
+
+}
+
+/* Invalid Field */
+.is-invalid {
+    outline: 2px solid #FF0000 !important;
+}
