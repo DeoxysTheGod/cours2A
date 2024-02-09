@@ -5,13 +5,15 @@ namespace domain;
 class Post
 {
 	protected $id;
+	protected $author;
 	protected $title;
 	protected $body;
 	protected $date;
 
-	public function __construct($id, $title, $body, $date)
+	public function __construct($id, $author, $title, $body, $date)
 	{
 		$this->id = $id;
+		$this->author = $author;
 		$this->title = $title;
 		$this->date = $date;
 		$this->body = $body;
@@ -20,6 +22,11 @@ class Post
 	public function getId()
 	{
 		return $this->id;
+	}
+
+	public function getAuthor()
+	{
+		return $this->author;
 	}
 
 	public function getTitle()

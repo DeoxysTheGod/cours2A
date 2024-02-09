@@ -16,7 +16,7 @@ class AnnoncesChecking
 		return $this->annoncesTxt;
 	}
 
-	public static function authenticate($login, $password, $data)
+	public static function authenticate($login, $password, $data): bool
 	{
 		return ( $data->getUser($login, $password) != null );
 	}
@@ -27,7 +27,7 @@ class AnnoncesChecking
 
 		$this->annoncesTxt = array();
 		foreach ($annonces as $post){
-			$this->annoncesTxt[] = [ 'id' => $post->getId(), 'title' => $post->getTitle(), 'body' => $post->getBody(), 'date' => $post->getDate() ];
+			$this->annoncesTxt[] = [ 'id' => $post->getId(), 'author' => $post->getAuthor(), 'title' => $post->getTitle(), 'body' => $post->getBody(), 'date' => $post->getDate() ];
 		}
 	}
 
@@ -35,6 +35,6 @@ class AnnoncesChecking
 	{
 		$post = $data->getPost($id);
 
-		$this->annoncesTxt[] = array( 'id' => $post->getId(), 'title' => $post->getTitle(), 'body' => $post->getBody(), 'date' => $post->getDate() );
+		$this->annoncesTxt[] = array( 'id' => $post->getId(), 'author' => $post->getAuthor(), 'title' => $post->getTitle(), 'body' => $post->getBody(), 'date' => $post->getDate() );
 	}
 }
