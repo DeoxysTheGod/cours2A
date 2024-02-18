@@ -5,8 +5,10 @@ include_once 'data/DataAccess.php';
 
 include_once 'control/Controllers.php';
 include_once 'control/Presenter.php';
+include_once 'control/UsersPresenter.php';
 
 include_once 'service/AnnoncesChecking.php';
+include_once 'service/UsersChecking.php';
 
 include_once 'gui/Layout.php';
 include_once 'gui/ViewLogin.php';
@@ -14,11 +16,12 @@ include_once "gui/ViewSignin.php";
 include_once 'gui/ViewAnnonces.php';
 include_once 'gui/ViewCreatePost.php';
 include_once 'gui/ViewPost.php';
+include_once 'gui/ViewUsersManagement.php';
 
-use gui\{Layout, ViewCreatePost, ViewLogin, ViewAnnonces, ViewPost, ViewSignin};
-use control\{Controllers, Presenter};
+use gui\{Layout, ViewCreatePost, ViewUsersManagement, ViewLogin, ViewAnnonces, ViewPost, ViewSignin};
+use control\{Controllers, Presenter, UsersPresenter};
 use data\DataAccess;
-use service\AnnoncesChecking;
+use service\{AnnoncesChecking, UsersChecking};
 
 $data = null;
 try {
@@ -35,8 +38,14 @@ $controller = new Controllers();
 // intialisation du cas d'utilisation AnnoncesChecking
 $annoncesCheck = new AnnoncesChecking() ;
 
+// intialisation du cas d'utilisation UsersChecking
+$usersCheck = new UsersChecking();
+
 // intialisation du presenter avec accès aux données de AnnoncesCheking
 $presenter = new Presenter($annoncesCheck);
+
+// intialisation du presenter avec accès aux données de UsersChecking
+$presenterUsers = new UsersPresenter($usersCheck);
 
 // chemin de l'URL demandée au navigateur
 // (p.ex. /annonces/index.php)
@@ -101,6 +110,37 @@ elseif ('/annonces/index.php/addpost' == $uri
 	&& isset($_POST['title']) && isset($_POST['body'])) {
 
 	$controller->createPostAction($_POST['title'], $_POST['body'], $data);
+}
+elseif ('/annonces/index.php/deletepost' == $uri
+	&& isset($_GET['id'])) {
+
+	$controller->deletePostAction($_GET['id'], $data);
+}
+elseif ('/annonces/index.php/blockuser' == $uri
+	&& isset($_GET['id'])) {
+
+	echo 'block user';
+
+	$controller->blockUserAction($_GET['id'], $data);
+}
+elseif ('/annonces/index.php/unblockuser' == $uri
+	&& isset($_GET['id'])) {
+
+	$controller->unblockUserAction($_GET['id'], $data);
+}
+elseif ('/annonces/index.php/deleteuser' == $uri
+	&& isset($_GET['id'])) {
+
+	$controller->deleteUserAction($_GET['id'], $data);
+}
+elseif ('/annonces/index.php/manageusers' == $uri) {
+
+	$controller->manageUsersAction($data, $usersCheck);
+
+	$layout = new Layout("gui/layout.html" );
+	$vueUsersManagement = new ViewUsersManagement( $layout, $presenterUsers );
+
+	$vueUsersManagement->display();
 }
 else {
 	header('Status: 404 Not Found');

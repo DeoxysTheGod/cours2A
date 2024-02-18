@@ -16,7 +16,7 @@ class ViewAnnonces extends View
 			exit;
 		}
 
-		$this->title= 'Exemple Annonces Basic PHP: Annonces';
+		$this->title= 'Annonces';
 
 		$this->content = "<p> Hello $login </p>";
 

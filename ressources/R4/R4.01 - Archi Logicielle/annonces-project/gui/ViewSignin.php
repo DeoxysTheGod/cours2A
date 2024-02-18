@@ -10,7 +10,7 @@ class ViewSignin extends View
 	{
 		parent::__construct($layout);
 
-		$this->title = 'Signin';
+		$this->title = 'Inscription';
 
 		$this->content = '
 			<h1>Inscription</h1>
@@ -26,8 +26,25 @@ class ViewSignin extends View
                 <br />
                 <label for="password"> Votre mot de passe </label> :
                 <input type="password" name="password" placeholder="Mdp compliqué" id="password" />
-        
+        ';
+
+		if (isset($_SESSION['admin']) && $_SESSION['admin']) {
+			$this->content.= '
+				<br />
+				<label for="admin"> Admin </label> :
+				<input type="checkbox" name="admin" id="admin" />
+				';
+		}
+
+
+		$this->content .= '
                 <input type="submit" value="Envoyer">
-            </form>';
+            </form>
+            <ul>
+            	<li>Le nom et prénom doivent comporter UNIQUEMENT des lettres majuscules ou minuscules (pas d\'espace)</li>
+            	<li>Le login et le mot de passe doivent contenir UNIQUEMENT des lettres majuscules ou minuscules et des chiffres (pas d\'espace)</li>
+            	<li>Le nom, prénom et login font entre 3 et 20 caractères</li>
+            	<li>Le mot de passe fait entre 6 et 40 caractères</li>
+            </ul>';
 	}
 }

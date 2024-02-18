@@ -8,7 +8,7 @@ class ViewCreatePost extends View
 	{
 		parent::__construct($layout);
 
-		$this->title = 'Login';
+		$this->title = 'Créer un post';
 
 		$this->content = '
 			<h1>Connexion</h1>

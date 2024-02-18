@@ -1,10 +1,9 @@
-
 const displayButton = document.getElementById('displayBtn');
 // p for displaying the temperature
 const data = document.getElementById('data');
 const dataTab = document.getElementById('dataTab');
 // tbody for displaying the history
-const tbody = document.getElementById('tbody');
+const tbody = document.getElementById('history');
 // tabs button
 const tabs = document.getElementById('tabs');
 // tab
@@ -19,18 +18,35 @@ let tab = []
 // Fill array with random number
 function fillArray(n, min, max) {
     let array = [];
-    for (let i = 0 ; i < n ; i++) {
+    for (let i = 0; i < n; i++) {
         array.push(Math.floor(Math.random() * (max - min) + min));
     }
     return array;
+}
+
+function fillTr(value) {
+    let tr = document.createElement('tr');
+    let tdTemp = document.createElement('td');
+    let tdDate = document.createElement('td');
+    let tdTime = document.createElement('td');
+
+    tdTemp.innerHTML = value + abbrCelcius.outerHTML;
+    const date = new Date();
+    tdDate.innerHTML = date.getDate() + '/' + (date.getMonth()+1) + '/' + date.getFullYear();
+    tdTime.innerHTML = date.getHours() + ':' + date.getMinutes() + ':' + date.getSeconds();
+    tr.appendChild(tdTemp);
+    tr.appendChild(tdDate);
+    tr.appendChild(tdTime);
+    tbody.appendChild(tr);
 }
 
 // Send data to the #data balise
 async function sendData(tab, timeout) {
     for (let i of tab) {
         await new Promise(resolve => setTimeout(resolve, timeout));
-        data.innerHTML = i + abbrCelcius.outerHTML
+        data.innerHTML = i + abbrCelcius.outerHTML;
         data.dispatchEvent(new Event('change'));
+        fillTr(i);
     }
 }
 
@@ -91,3 +107,25 @@ if (displayButton) {
         displayButton.disabled = false;
     });
 }
+
+// URL de l'API
+const url = "https://api.example.com/data";
+
+// Utilisation de fetch pour récupérer les données
+fetch(url)
+    .then(response => {
+        // Vérification si la requête a réussi
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        // Conversion de la réponse en JSON
+        return response.json();
+    })
+    .then(data => {
+        // Utilisation des données ici
+        console.log(data);
+    })
+    .catch(error => {
+        // Gestion des erreurs ici
+        console.log('Une erreur est survenue : ', error);
+    });

@@ -9,14 +9,16 @@ class Post
 	protected $title;
 	protected $body;
 	protected $date;
+	protected $deletable;
 
-	public function __construct($id, $author, $title, $body, $date)
+	public function __construct($id, $author, $title, $body, $date, $deletable = false)
 	{
 		$this->id = $id;
 		$this->author = $author;
 		$this->title = $title;
-		$this->date = $date;
 		$this->body = $body;
+		$this->date = $date;
+		$this->deletable = $deletable;
 	}
 
 	public function getId()
@@ -42,5 +44,10 @@ class Post
 	public function getDate()
 	{
 		return $this->date;
+	}
+
+	public function isDeletable()
+	{
+		return $this->deletable;
 	}
 }

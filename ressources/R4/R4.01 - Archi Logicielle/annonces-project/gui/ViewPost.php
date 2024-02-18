@@ -10,7 +10,7 @@ class ViewPost extends View
 	{
 		parent::__construct($layout);
 
-		$this->title= 'Exemple Annonces Basic PHP: Post';
+		$this->title= $presenter->getCurrentPostTitle();
 
 		$this->content = $presenter->getCurrentPostHTML();
 	}

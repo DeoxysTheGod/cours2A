@@ -18,7 +18,8 @@ class AnnoncesChecking
 
 	public static function authenticate($login, $password, $data): bool
 	{
-		return ( $data->getUser($login, $password) != null );
+		$user = $data->getUser($login, $password);
+		return ( $user != null && !$user->getBlocked());
 	}
 
 	public function getAllAnnonces($data)
@@ -35,6 +36,6 @@ class AnnoncesChecking
 	{
 		$post = $data->getPost($id);
 
-		$this->annoncesTxt[] = array( 'id' => $post->getId(), 'author' => $post->getAuthor(), 'title' => $post->getTitle(), 'body' => $post->getBody(), 'date' => $post->getDate() );
+		$this->annoncesTxt[] = array( 'id' => $post->getId(), 'author' => $post->getAuthor(), 'title' => $post->getTitle(), 'body' => $post->getBody(), 'date' => $post->getDate(), 'deletable' => $post->isDeletable());
 	}
 }

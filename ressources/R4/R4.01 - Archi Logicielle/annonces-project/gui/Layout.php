@@ -2,6 +2,10 @@
 
 namespace gui;
 
+include_once "Menu.php";
+
+use gui\Menu;
+
 class Layout
 {
 	protected $templateFile;
@@ -16,14 +20,7 @@ class Layout
 		$page = file_get_contents( $this->templateFile );
 		$page = str_replace( ['%title%','%content%'], [$title,$content], $page);
 
-		$menu = '
-		<nav>
-			<ul>
-			<li><a href="/annonces/index.php">Retourner au login</a></li>
-				<li><a href="/annonces/index.php/annonces">Accueil</a></li>
-				<li><a href="/annonces/index.php/createpost">Créer un post</a></li>
-			</ul>
-		</nav>';
+		$menu = $this->menu();
 
 		if (isset($_SESSION['login']))
 		{
@@ -33,9 +30,17 @@ class Layout
 		{
 			$page = str_replace('%menu%', '', $page);
 		}
-
-
 		echo $page;
+	}
+
+	public function menu(): string
+	{
+		$Menu = new Menu();
+		$menu = $Menu->getMenu();
+		if (isset($_SESSION['admin']) && $_SESSION['admin']) {
+			$menu .= $Menu->getExtendedMenu();
+		}
+		return $menu;
 	}
 
 }

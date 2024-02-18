@@ -10,7 +10,7 @@ class ViewLogin extends View
 	{
 		parent::__construct($layout);
 
-		$this->title = 'Login';
+		$this->title = 'Connexion';
 
 		$this->content = '
 			<h1>Connexion</h1>
