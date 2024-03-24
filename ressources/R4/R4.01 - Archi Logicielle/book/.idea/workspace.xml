@@ -9,51 +9,30 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="45a66d23-ff43-45c4-a066-b99769974c3f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../annonces-project.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../annonces_TD1.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../annonces_basic.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sqlDataSources.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/book.mv.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/book.trace.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/uzaki/book/Book.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/uzaki/book/BookApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/uzaki/book/BookRepositoryInterface.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/uzaki/book/BookRepositorySqlitedb.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/uzaki/book/BookResources.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/uzaki/book/BookService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/uzaki/book/HelloResource.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/beans.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tp1 - Quentin BEAUQUIER.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../R4.10 - Complément Web/TD/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../R4.10 - Complément Web/TD/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../R4.10 - Complément Web/TD/td1/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../R4.10 - Complément Web/TD/td2/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../R4.10 - Complément Web/TD/td1/html/td1.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../R4.10 - Complément Web/TD/td1/js/td1.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../R4.10 - Complément Web/TD/td2/css/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../R4.10 - Complément Web/TD/td2/html/td2.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../R4.10 - Complément Web/TD/td2/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../R4.10 - Complément Web/TD/td2/js/td2.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../R4.10 - Complément Web/TD/td2/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../R4.10 - Complément Web/tp1/Formulaire/formulaire.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../R4.10 - Complément Web/tp1/Formulaire/formulaire.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../R4.10 - Complément Web/tp1/Formulaire/formulaire.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../R4.10 - Complément Web/tp1/Formulaire/formulaire.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../R4.10 - Complément Web/tp1/Taquin/taquin.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../R4.10 - Complément Web/tp1/Taquin/taquin.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../R4.10 - Complément Web/tp1/Taquin/taquin.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../R4.10 - Complément Web/tp1/Taquin/taquin.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../R4.10 - Complément Web/tp1/Taquin/taquin.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../R4.10 - Complément Web/tp1/Taquin/taquin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../R4.10 - Complément Web/tp1/snake/snake.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../R4.10 - Complément Web/tp1/snake/snake.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../R4.10 - Complément Web/tp1/snake/snake.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../R4.10 - Complément Web/tp1/snake/snake.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../R4.10 - Complément Web/tp1/snake/snake.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../R4.10 - Complément Web/tp1/snake/snake.js" afterDir="false" />
+    <list default="true" id="2772f4c0-449c-4df5-95d1-a38e2ec68f53" name="Changes" comment="change db name">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/book/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/book/.idea/deployment.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/book/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/book/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/book/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/book/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/book/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/book/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/book/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/book/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/book/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/book/src/main/java/net/uzaki/book/Book.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/book/src/main/java/net/uzaki/book/BookApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/book/src/main/java/net/uzaki/book/BookRepositoryInterface.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/book/src/main/java/net/uzaki/book/BookRepositoryMariadb.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/book/src/main/java/net/uzaki/book/BookResource.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/book/src/main/java/net/uzaki/book/BookService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/book/src/main/java/net/uzaki/book/HelloResource.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/book/src/main/resources/META-INF/beans.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/book/src/main/resources/META-INF/persistence.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../user/src/main/java/net/uzaki/user/UserResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/../user/src/main/java/net/uzaki/user/UserResource.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,10 +49,17 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 8
-}]]></component>
-  <component name="ProjectId" id="2e9Mg6JrPc8lReRNXv9a8OA0LXd" />
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2e9Tua0IwuU8hhXa97hk1V2wZjF" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
   </component>
@@ -82,11 +68,10 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "GlassFish Server.GlassFish 7.0.13.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
     "last_opened_file_path": "C:/Users/Quentin/Documents/Repos/cours2A/ressources/R4/R4.01 - Archi Logicielle/book",
@@ -95,16 +80,13 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
     "settings.editor.selected.configurable": "preferences.applicationServers",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RunManager">
     <configuration name="GlassFish 7.0.13" type="GlassfishConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="GlassFish 7.0.13" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/book-1.0-SNAPSHOT/api/book" />
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/book-1.0-SNAPSHOT/api/books" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="book:war">
@@ -187,16 +169,42 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="45a66d23-ff43-45c4-a066-b99769974c3f" name="Changes" comment="" />
-      <created>1711312449549</created>
+      <changelist id="2772f4c0-449c-4df5-95d1-a38e2ec68f53" name="Changes" comment="" />
+      <created>1711316020158</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1711312449549</updated>
-      <workItem from="1711312450575" duration="3564000" />
+      <updated>1711316020158</updated>
+      <workItem from="1711316021193" duration="623000" />
+      <workItem from="1711316958524" duration="63000" />
+      <workItem from="1711318615274" duration="69000" />
+      <workItem from="1711320873086" duration="257000" />
+      <workItem from="1711322286558" duration="123000" />
     </task>
+    <task id="LOCAL-00001" summary="book app rest">
+      <option name="closed" value="true" />
+      <created>1711316582385</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1711316582385</updated>
+    </task>
+    <task id="LOCAL-00002" summary="change db name">
+      <option name="closed" value="true" />
+      <created>1711317012575</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1711317012575</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="book app rest" />
+    <MESSAGE value="change db name" />
+    <option name="LAST_COMMIT_MESSAGE" value="change db name" />
   </component>
 </project>
