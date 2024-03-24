@@ -8,7 +8,7 @@ const rows = 30;
 // Nombre de colonnes
 const cols = 40;
 // Vitesse du jeu
-let gameSpeed = 7;
+let gameSpeed = 7; // Si le jeu semble lent vous pouvez augmenter la vitesse ici
 
 // Ajustez la taille du canvas en fonction du nombre de lignes et de colonnes
 canvas.width = pixelSize * cols;
@@ -84,9 +84,11 @@ class Snake {
 
             this.grow = false;
 
+            // Déplacez la tête du serpent
             this.x += this.xSpeed * pixelSize;
             this.y += this.ySpeed * pixelSize;
 
+            // Si une direction est en attente, changez la direction du serpent
             if (this.directionQueue.length > 0) {
                 const direction = this.directionQueue.shift();
                 this.xSpeed = direction.x;
@@ -100,15 +102,21 @@ class Snake {
     show() {
         const ctx = canvas.getContext('2d');
         ctx.fillStyle = 'green';
+        // Dessine la queue du serpent
         for (let i = 0; i < this.tail.length; i++) {
+            // Interpole la position de chaque segment de la queue
             const nextPos = this.tail[i + 1] ? this.tail[i + 1] : {x: this.x, y: this.y};
+            // Calcule la position intermédiaire entre la position actuelle et la position suivante
             const interpolatedX = this.tail[i].x + (nextPos.x - this.tail[i].x) * this.interpolation;
             const interpolatedY = this.tail[i].y + (nextPos.y - this.tail[i].y) * this.interpolation;
+            // Dessine le segment de la queue
             ctx.fillRect(interpolatedX, interpolatedY, pixelSize, pixelSize);
         }
+        // Dessine la tête du serpent
         ctx.fillRect(this.x + this.xSpeed * pixelSize * this.interpolation, this.y + this.ySpeed * pixelSize * this.interpolation, pixelSize, pixelSize);
     }
 
+    // Affiche le score
     showScore() {
         let width = canvas.width / 2;
         let height = canvas.height - canvas.height / 7;
@@ -118,6 +126,7 @@ class Snake {
             width, height);
     }
 
+    // Change la direction du serpent
     changeDirection(x, y) {
         if (this.xSpeed === 0 && x !== 0 || this.ySpeed === 0 && y !== 0) {
             this.directionQueue = []; // Vide la file d'attente des directions
@@ -125,32 +134,38 @@ class Snake {
         }
     }
 
+    // Fait manger le serpent
     eat(pos) {
+        // Si la position de la nourriture correspond à la position de la tête du serpent
         if (this.x === pos.x && this.y === pos.y) {
+            // Augmente le score
             this.total++;
             this.grow = true;
             // Si le serpent a déjà une queue, ajoutez un nouveau segment à la queue du serpent à la position de la dernière partie de la queue
             if (this.total > 1) {
+                // Ajoute un nouveau segment à la queue du serpent
                 this.tail.push({x: this.tail[this.total - 2].x, y: this.tail[this.total - 2].y});
             }
-            if (this.total === cols * rows) {
-                win();
-            }
+            // Si le score est égal au nombre de cases, le joueur a gagné
             return true;
         }
         return false;
     }
 
+    // Vérifie les collisions
     checkCollision() {
         // Si le serpent touche sa queue, réinitialisez le serpent
         for (let i = 0; i < this.tail.length; i++) {
             if (this.x === this.tail[i].x && this.y === this.tail[i].y) {
-                lose();
+                isLosed = true;
             }
         }
         // Si le serpent touche le bord, réinitialisez le serpent
         if (this.x >= canvas.width || this.x < 0 || this.y >= canvas.height || this.y < 0) {
-            lose();
+            isLosed = true;
+        }
+        if (this.total === cols * rows) {
+            isWinned = true;
         }
     }
 }
@@ -161,31 +176,41 @@ class Food {
         this.y = Math.floor(Math.random() * rows) * pixelSize;
     }
 
+    // Affiche la nourriture
     show() {
         const ctx = canvas.getContext('2d');
         ctx.fillStyle = 'red';
         ctx.beginPath();
+        // Dessine un cercle pour représenter la nourriture
         ctx.arc(this.x + pixelSize / 2, this.y + pixelSize / 2, pixelSize / 2, 0, Math.PI * 2);
         ctx.fill();
     }
 
+    // Met à jour la position de la nourriture
     update() {
         if (snake.eat(this)) {
-            do {
-                this.x = Math.floor(Math.random() * cols) * pixelSize;
-                this.y = Math.floor(Math.random() * rows) * pixelSize;
-            } while (this.isInSnake());
+            this.pickLocation();
         }
     }
 
-    isInSnake() {
-        for (let i = 0; i < snake.tail.length; i++) {
-            if (this.x === snake.tail[i].x && this.y === snake.tail[i].y) {
-                return true;
+    pickLocation() {
+        // Crée une liste de toutes les positions possibles
+        let positions = [];
+        for (let i = 0; i < cols; i++) {
+            for (let j = 0; j < rows; j++) {
+                positions.push({x: i * pixelSize, y: j * pixelSize});
             }
         }
-        return this.x === snake.x && this.y === snake.y;
 
+        // Supprime les positions occupées par le serpent
+        for (let i = 0; i < snake.tail.length; i++) {
+            positions = positions.filter(pos => pos.x !== snake.tail[i].x || pos.y !== snake.tail[i].y);
+        }
+
+        // Choisis une position aléatoire parmi les positions restantes
+        const position = positions[Math.floor(Math.random() * positions.length)];
+        this.x = position.x;
+        this.y = position.y;
     }
 }
 
@@ -194,8 +219,10 @@ const food = new Food();
 const fpsCounter = new FPSCounter();
 
 let isPaused = true;
+let isLosed = false;
+let isWinned = false;
 
-const FPS = 144; // Augmentez le nombre de FPS
+const FPS = 60; // Augmentez le nombre de FPS
 let updateInterval = FPS / gameSpeed; // Ajustez l'intervalle de mise à jour en fonction du nombre de FPS
 
 let updateCount = 0;
@@ -208,21 +235,26 @@ function displayText(text, size, color, x, y) {
     ctx.fillText(text, x, y);
 }
 
+// Boucle principale
 function loop() {
+    draw();
     if (!isPaused) {
-
+        // Met à jour le compteur de FPS
         fpsCounter.update();
         updateCount++;
+        // Si le nombre de mises à jour est supérieur à l'intervalle de mise à jour, met à jour le jeu
         if (updateCount >= updateInterval) {
             update();
             updateCount = 0;
         } else {
+            // Interpole la position du serpent
             snake.interpolation = updateCount / updateInterval;
         }
-        draw();
+
     }
 }
 
+// Met à jour le jeu
 function update() {
     if (isPaused) return;
     snake.update();
@@ -233,6 +265,7 @@ function update() {
     }
 }
 
+// Dessine le jeu
 function draw() {
     const ctx = canvas.getContext('2d');
     ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -240,24 +273,36 @@ function draw() {
     snake.showScore();
     food.show();
     snake.show();
+    if (isLosed) {
+        lose();
+    }
+    if (isWinned) {
+        win();
+    }
 }
 
+// Met le jeu en pause
 function pause() {
     isPaused = true;
 }
 
+// Reprend le jeu
 function resume() {
     isPaused = false;
 }
 
+// Réinitialise le jeu
 function restart() {
     snake.reset();
+    isLosed = false;
+    isWinned = false;
     draw();
     pause();
 }
 
+// Affiche l'écran de fin de jeu
 function lose() {
-    restart();
+    pause();
     let size = canvas.height / 6;
     let width = canvas.width / 2;
     let height = canvas.height - size * 2.5;
@@ -268,8 +313,9 @@ function lose() {
         width, height);
 }
 
+// Affiche l'écran de victoire
 function win() {
-    restart();
+    pause();
     let size = canvas.height / 6;
     let width = canvas.width / 2;
     let height = canvas.height - size * 2.5;
@@ -280,24 +326,27 @@ function win() {
         width, height);
 }
 
+// Gère les touches du clavier
 function keyPressed(e) {
     switch (e.keyCode) {
-        case 32:
+        case 32: // Espace
             isPaused ? resume() : pause();
             break;
-        case 82:
+        case 82: // R
             restart();
             break;
-        case 37:
-        case 38:
-        case 39:
-        case 40:
+        case 37: // Gauche
+        case 38: // Haut
+        case 39: // Droite
+        case 40: // Bas
             resume(); // Si le jeu est en pause, ignore les touches directionnelles
             snake.changeDirection(e.keyCode === 39 ? 1 : e.keyCode === 37 ? -1 : 0, e.keyCode === 40 ? 1 : e.keyCode === 38 ? -1 : 0);
             break;
     }
 }
 
+// Gère les touches du clavier
 document.addEventListener('keydown', keyPressed);
 
+// Démarre la boucle principale
 setInterval(loop, 1000 / FPS);

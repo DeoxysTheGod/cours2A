@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200">
+    <!-- Background -->
+    <rect class="key-background" x="5" y="105" width="90" height="90" fill="#2E5339" stroke="#2E5339" stroke-width="2" rx="10" ry="10"/>
+    <rect class="key-background" x="105" y="105" width="90" height="90" fill="#2E5339" stroke="#2E5339" stroke-width="2" rx="10" ry="10"/>
+    <rect class="key-background" x="205" y="105" width="90" height="90" fill="#2E5339" stroke="#2E5339" stroke-width="2" rx="10" ry="10"/>
+    <rect class="key-background" x="105" y="5" width="90" height="90" fill="#2E5339" stroke="#2E5339" stroke-width="2" rx="10" ry="10"/>
+    <!-- Key shapes -->
+    <rect class="key-shape" x="10" y="110" width="80" height="80" fill="#647c5b" stroke="#2E5339" stroke-width="1" rx="10" ry="10"/>
+    <rect class="key-shape" x="110" y="110" width="80" height="80" fill="#647c5b" stroke="#2E5339" stroke-width="1" rx="10" ry="10"/>
+    <rect class="key-shape" x="210" y="110" width="80" height="80" fill="#647c5b" stroke="#2E5339" stroke-width="1" rx="10" ry="10"/>
+    <rect class="key-shape" x="110" y="10" width="80" height="80" fill="#647c5b" stroke="#2E5339" stroke-width="1" rx="10" ry="10"/>
+    <!-- Arrow -->
+    <!-- Arrow icon (up) -->
+    <text class="key-icon" x="150" y="40" text-anchor="middle" alignment-baseline="middle" font-family="Arial" font-size="40" fill="#D2E59E">&#8593;</text>
+    <!-- Arrow icon (down) -->
+    <text class="key-icon" x="150" y="140" text-anchor="middle" alignment-baseline="middle" font-family="Arial" font-size="40" fill="#D2E59E">&#8595;</text>
+    <!-- Arrow icon (left) -->
+    <text class="key-icon" x="50" y="150" text-anchor="middle" alignment-baseline="middle" font-family="Arial" font-size="40" fill="#D2E59E">&#8592;</text>
+    <!-- Arrow icon (right) -->
+    <text class="key-icon" x="250" y="150" text-anchor="middle" alignment-baseline="middle" font-family="Arial" font-size="40" fill="#D2E59E">&#8594;</text>
+    <!-- Key labels -->
+    <!-- Label (up) -->
+    <text class="key-label" x="150" y="75" text-anchor="middle" alignment-baseline="middle" font-family="Arial" font-size="14" fill="#D2E59E">Up</text>
+    <!-- Label (down) -->
+    <text class="key-label" x="150" y="175" text-anchor="middle" alignment-baseline="middle" font-family="Arial" font-size="14" fill="#D2E59E">Down</text>
+    <!-- Label (left) -->
+    <text class="key-label" x="50" y="175" text-anchor="middle" alignment-baseline="middle" font-family="Arial" font-size="14" fill="#D2E59E">Left</text>
+    <!-- Label (right) -->
+    <text class="key-label" x="250" y="175" text-anchor="middle" alignment-baseline="middle" font-family="Arial" font-size="14" fill="#D2E59E">Right</text>
+</svg>

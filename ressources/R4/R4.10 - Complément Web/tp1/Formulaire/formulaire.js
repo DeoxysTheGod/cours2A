@@ -37,8 +37,9 @@ const zipRegex = /^[0-9]{5}$/; // 5 chiffres
 const cardnumberRegex = /^[0-9]{16}$/; // 16 chiffres
 const cryptoRegex = /^[0-9]{3}$/; // 3 chiffres
 
-// Functions
+// Fonctions
 
+// Vérifie si l'input est valide
 function isThisValide(input, booleanFunction) {
     if (!booleanFunction) {
         input.classList.add('is-invalid');
@@ -49,6 +50,7 @@ function isThisValide(input, booleanFunction) {
     }
 }
 
+// Vérifie si un input radio est valide
 function validateRadioInput(inputs) {
     let isValid = false;
     inputs.forEach(input => {
@@ -59,6 +61,7 @@ function validateRadioInput(inputs) {
     return isValid;
 }
 
+// Vérifie si l'input est valide avec une regex
 function validateWithRegex(input, regex) {
     return regex.test(input.value);
 }

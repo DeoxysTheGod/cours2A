@@ -34,7 +34,7 @@ body {
     margin: 2px;
 }
 
-/* Text Area Field */
+/* Champ de saisi de texte */
 input[type="text"],
 input[type="email"],
 input[type="tel"] {
@@ -58,7 +58,7 @@ input[type="tel"]:hover {
     background-color: #f0f0f0;
 }
 
-/* Radio Field */
+/* Champ radio */
 .radio-field {
     display: flex;
     flex-direction: column;
@@ -93,7 +93,7 @@ input[type="radio"]:checked {
     background-color: #495F41;
 }
 
-/* Submit Button */
+/* Bouton envoyer */
 #submitBtn {
     margin-top: 10px;
     padding: 10px;
@@ -116,7 +116,7 @@ input[type="radio"]:checked {
 
 }
 
-/* Invalid Field */
+/* Champ invalide */
 .is-invalid {
     outline: 2px solid #FF0000 !important;
 }

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta HTTP-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title>TD 1</title>
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main id="content">
+    <nav id="tabsButton">
+        <button name="data" id="getTemp" class="tablinks">Température</button>
+        <button name="history" id="getHistory" class="tablinks">Historique</button>
+    </nav>
+    <article>
+        <section id="dataTab" class="tab">
+            <sensor-data id="temp">
+                <h2 slot="title">Température</h2>
+                <div slot="data">
+                    <span class="displayDataArea big-text"></span>
+                    <abbr title="degrés Celsius" class="big-text">°C</abbr>
+                </div>
+                <p slot="message" class="message" hidden></p>
+            </sensor-data>
+        </section>
+        <section id="historyTab" class="tab" hidden>
+            <h2>Historique</h2>
+            <div id="historyContainer">
+                <table class="history-table">
+                    <thead>
+                    <tr>
+                        <th>Température</th>
+                        <th>Date</th>
+                        <th>Heure</th>
+                    </tr>
+                    </thead>
+                    <tbody id="history">
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </article>
+</main>
+
+<!-- Templates -->
+<template id="sensor-data">
+    <slot name="title">TITRE</slot>
+    <slot name="data">DATA</slot>
+    <slot name="message" role="alert" aria-live="polite" aria-atomic="true" aria-relevant="all" class="message" hidden></slot>
+</template>
+
+<template id="history-row">
+    <td><span slot="temperature"></span><abbr title="degrés Celsius">°C</abbr></td>
+    <td slot="date"></td>
+    <td slot="time"></td>
+</template>
+
+</body>
+</html>

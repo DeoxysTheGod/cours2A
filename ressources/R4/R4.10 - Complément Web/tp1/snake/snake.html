@@ -9,16 +9,37 @@
 <body>
 <h1>Snake</h1>
 
-<canvas id="canvas">
+<div id="game">
+    <canvas id="canvas">
 
-</canvas>
-<p>
-    Règles du jeu : <br>
-    - Le serpent doit manger les pommes pour grandir <br>
-    - Si le serpent touche les bords du canvas ou lui-même, la partie est perdue <br>
-    - Utilisez les flèches pour diriger le serpent<br>
-    - Appuyez sur "Espace" pour mettre en pause le jeu<br>
-    - Appuyez sur "R" pour recommencer une partie<br>
-</p>
+    </canvas>
+    <div id="rules">
+        <h2>Règles du jeu :</h2>
+        - Le serpent doit manger les pommes pour grandir <br>
+        - Si le serpent touche les bords du canvas ou lui-même, la partie est perdue <br>
+        <h2>Touches :</h2>
+        <table>
+            <thead>
+            <tr>
+                <th>Touches</th>
+                <th>Action</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td><img src="img/arrow-key.svg" alt="Touche directionnelle" width="150"></td>
+                <td>Diriger le serpent</td>
+            </tr>
+            <tr>
+                <td><img src="img/space-key.svg" alt="Touche espace" width="50" height="50"></td>
+                <td>Mettre en pause le jeu</td>
+            </tr>
+            <tr>
+                <td><img src="img/r-key.svg" alt="Touche R" width="50" height="50"></td>
+                <td>Recommencer une partie</td>
+            </tr>
+        </table>
+    </div>
+</div>
 </body>
 </html>
