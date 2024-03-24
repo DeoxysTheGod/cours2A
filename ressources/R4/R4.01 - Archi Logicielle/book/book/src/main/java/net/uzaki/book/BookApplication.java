@@ -22,7 +22,7 @@ public class BookApplication extends Application {
         BookRepositoryMariadb db = null;
 
         try{
-            db = new BookRepositoryMariadb("jdbc:mariadb://mysql-archilog.alwaysdata.net/archilog_java_book", "archilog_book", "Archilog1234*");
+            db = new BookRepositoryMariadb("jdbc:mariadb://mysql-archilog.alwaysdata.net/archilog_library_db", "archilog_library", "Archilog1234*");
         }
         catch (Exception e){
             System.err.println(e.getMessage());
