@@ -160,5 +160,112 @@ fonction de gestion
 * Maitien de la compétitivité de l'entreprise, dans un secteur bien précis si les entreprises majeures l'adoptent les dirigeants des autres entreprises, suivent et 
 optent également pour cette solution. Par crainte de laisser leurs concurents prendre un avantage significatif
 * Faciliter pour échanger avec ses partenaires. Une entreprise satisfaite d'un PGI, peut demander à ses partenaires de s'équiper à leur tour d'un PGI afin 
-d'échanger directement des informations sans nouvelles saisies et traitement préparatoire.
-* Processus et données uniformisés
+d'échanger directement des informations sans nouvelles saisies et traitement préparatoire
+* Processus et données uniformisés = sentiment d'appartenance
+* Contribution à la réussite d'une stratégie globale, ici l'entreprise collecte, traite, communique (ce sont les fonctions du SI) des données à travers différent 
+environnement culturel
+
+
+### II - Les rigidités
+
+* Surveillance accrue des salariés par les technologies. Toutes personnes ayant des droits d'accès suffisant peut accéder en permanence aux activités de chacun des 
+collaborateurs de l'entreprise, les collaborateurs peuvent perdre le contrôle des informations qu'ils manipulent et qu'ils produisent. Perte de la maîtrise de 
+l'informations pour les salariés, la transparence et la traçabilité, permettent l'identification des responsabilités, les contrôles automatisés, les comparaisons en 
+continu des performance et des coûts. Cette situation inquete les collaborateurs et peut être une des sources principales des résistances aux projets d'implantation 
+d'un PGI
+* Impact considérable sur l'organisation, les collaboratuers doivent être prêt à accepter les bouleversement induit par la mise en place d'un PGI, donc difficulté 
+d'appropriation, donc cela nécessite des stages/formations
+* Standardisation des processus de travail par les technologies
+* Projet souvent long et couteux, la mise en oeuvre s'avère lourde et rigide, une bonne connaissance des processus est nécessaire pour son succés. Les PGI sont 
+souvent plus large que les besoins d'une entreprise, il convient donc d'adapter les processus de l'entreprise à l'outils, à moins de disposer de la taille et de la 
+puissance financière suffisante pour pouvoir engager des développements informatiques honéreux
+* Le risque de perte de savoir faire et de perte d'un potentiel d'innovation. Une fois le PGI implémenté et paramétré, l'entreprise sera immobilisé dans un 
+fonctionnement rigide avec un outil complexe, qu'elle ne pourra modifier qu'avec difficulté ou pas du tout. Cette rigidité risque d'empécher les collaborateurs 
+d'effectuer des petites modifications, d'essayer de nouveaux procéder ou toutes expérimentations qui peuvent être source d'innovation. Les seuls modifications 
+possible sont celles implémenter dans une nouvelle version du Progiciel par l'éditeur ou qui font suite à un nouveau paramétrage. Or l'innovation et essentiel dans 
+les activités, elle peut lui permettre de prendre un avantage considérable sur ses concurents
+* Nécéssité d'une maintenance continu, une fois l'éditeur sélectionné l'organisation risque d'être enchaîné à lui
+
+### III - Conclusion
+C'est un outil de gestion en plein essort, il permet de bénéficier d'une intégration informationnelle, d'uniformiser leur support informatique et les processus 
+associés aux activités informatisé. On ne doit pas adopter un tel outil sans réflexion préalable, car il y a des impacts considérable aux niveaux intra et 
+extra-organisationnel. Un PGI est toujours orienté vers la satisfaction client.
+
+#### Mise en place d'un PGI
+
+* Identification des processus visés
+* Installation et paramétrage du PGI
+	* Certains processus sont intégrés telquel dans le PGI
+	* D'autre processus seront reconfigurés lors de la mise en place du PGI pour s'adapter au PGI
+	* Des développements spécifiques peuvent être nécessaire
+* Formation des utilisateurs
+
+### IV -
+
+<table>
+<thead>
+<tr>
+	<th></th>
+	<th>Modules</th>
+	<th>Coûts</th>
+	<th>Assistances</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+	<td>SAGE</td>
+	<td>
+		<ul>
+			<li>Comptabilité</li>
+			<li>Trésorerie</li>
+			<li>Force de vente</li>
+			<li>Stockage et partage</li>
+			<li>Gestion de commercial</li>
+		</ul>
+	</td>
+	<td>Standard => 70€ / mois</td>
+	<td>Assistance illimité payante</td>
+</tr>
+<tr>
+	<td>ODOO</td>
+	<td>
+		<ul>
+			<li>eCommerce</li>
+			<li>Site Web</li>
+			<li>Blog</li>
+			<li>Live chat</li>
+			<li>Forum</li>
+		</ul>
+	</td>
+	<td>Gratuit mais limité, Personnalisé => 29.90€ / utilisateur /mois</td>
+	<td></td>
+</tr>
+<tr>
+	<td>CEGID</td>
+	<td>
+		<ul>
+			<li>Comptabilité</li>
+			<li>Ventes & Expérience client</li>
+			<li>RH</li>
+			<li>Organisations du secteur public</li>
+		</ul>
+	</td>
+	<td>1 mois, 1 utilisateur 290€</td>
+	<td>Assitante illimité</td>
+</tr>
+<tr>
+	<td>OPEN EBP</td>
+	<td>
+		<ul>
+			<li>Comptabilité</li>
+			<li>Fiscalité</li>
+			<li>Business plan</li>
+			<li>Gestion commerciale</li>
+			<li>Relation client</li>
+		</ul>
+	</td>
+	<td>Sur devis</td>
+	<td>Assistance illimité</td>
+</tr>
+</tbody>
+</table>
