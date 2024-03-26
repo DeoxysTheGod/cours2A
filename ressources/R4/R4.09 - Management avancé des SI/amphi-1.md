@@ -141,9 +141,24 @@ proximité ou à l'international.
 
 Regroupe l'ensemble des applications commerciales liées aux terminaux mobiles et des transactions commerciales effectuées le plus souvent en situation de mobilité.
 
-## IV - Le PGI
+## Chapitre 5 - Le PGI
 
 Un Progiciel (Produit logiciel) est un logiciel clé en main mais paramétrable, répondant à des besoins standardisés dans un domaine. On l'oppose à un développement 
 spécifique. Un Progiciel est le fruit du développement par un éditeur ou une communauté. Un PGI de gestion intégré est un produit logiciel paramétrable construit 
 autour d'une base de données unique, suceptible de couvrir la mojorité des besoins en traitement d'informations. Des différents services d'une organisation grace à un 
 ensemble de module compatible.
+
+La notion d'intégration siginifie qu'une même donnée n'est saisi qu'une seule fois dans le SI et ses appplications, ce qui supprime des redondance, garanti 
+l'unicité des données et leurs mise à jours. Chaque acteur du processus n'a accès qu'aux données le concernant via un module dédié à son métier.
+
+### I - Les avantages
+
+* Conservation des données. Créer des entrepots de données (Datawarehouse) qui conservent l'historique de l'information. L'entreprise peut garder en mémoire les 
+évenements passé
+* Réduction des coûts et des délais d'élaboration d'une application informatique, grace à la mutualisation par un éditeur de solution normalisé, d'automatisation de 
+fonction de gestion
+* Maitien de la compétitivité de l'entreprise, dans un secteur bien précis si les entreprises majeures l'adoptent les dirigeants des autres entreprises, suivent et 
+optent également pour cette solution. Par crainte de laisser leurs concurents prendre un avantage significatif
+* Faciliter pour échanger avec ses partenaires. Une entreprise satisfaite d'un PGI, peut demander à ses partenaires de s'équiper à leur tour d'un PGI afin 
+d'échanger directement des informations sans nouvelles saisies et traitement préparatoire.
+* Processus et données uniformisés
