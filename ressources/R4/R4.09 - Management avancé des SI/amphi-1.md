@@ -140,3 +140,10 @@ proximité ou à l'international.
 #### D - M-Commerce (Mobile Commerce)
 
 Regroupe l'ensemble des applications commerciales liées aux terminaux mobiles et des transactions commerciales effectuées le plus souvent en situation de mobilité.
+
+## IV - Le PGI
+
+Un Progiciel (Produit logiciel) est un logiciel clé en main mais paramétrable, répondant à des besoins standardisés dans un domaine. On l'oppose à un développement 
+spécifique. Un Progiciel est le fruit du développement par un éditeur ou une communauté. Un PGI de gestion intégré est un produit logiciel paramétrable construit 
+autour d'une base de données unique, suceptible de couvrir la mojorité des besoins en traitement d'informations. Des différents services d'une organisation grace à un 
+ensemble de module compatible.
