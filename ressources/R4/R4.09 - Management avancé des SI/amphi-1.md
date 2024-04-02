@@ -269,3 +269,14 @@ extra-organisationnel. Un PGI est toujours orienté vers la satisfaction client.
 </tr>
 </tbody>
 </table>
+
+## Chapitre VI - Processus
+
+Un processus est un ensemble d'activités coordonnées par l'information produisant un résultat qui satisfait un besoin en consommant des ressources humaines, 
+matériels ou informationnelles.  
+Le bénéficiaire du résultat d'un processus est appelé client du processus.
+
+Il existe trois catégories de processus :
+* Processus métier : ceux qui réalisent le processus
+* Processus suppor : Ceux qui mettent tout en place pour le processus métier
+* Processus pilotage : Ceux qui prennent toutes les décisions
